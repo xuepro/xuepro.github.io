@@ -1,0 +1,157 @@
+---
+layout: page
+title: "About"
+description: "教小白精通编程"
+header-img: "img/post-bg-rwd.jpg"
+---
+
+<!-- Language Selector -->
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select> -->
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+
+   <p>教小白学精通编程，提供计算机编程相关的开放课程，如各种编程语言（C/C++、Python、Java等）、
+	    数据结构与算法、图形图像处理、机器学习、智能游戏等课程的教学文章和视频课程。 
+	    请关注微博: 教小白学精通编程和qq群：101132160 </p>
+
+    
+    
+    <h5>开放课程</h5>
+    <ul>
+
+        <li><a href=http://study.163.com/course/introduction.htm?courseId=1004703004&utm_campaign=commission&utm_source=cp-400000000236023&utm_medium=share">“数据结构(C语言版)”网易云课堂</a></li>
+	<li><a href="http://ke.qq.com/course/258409">“数据结构(C语言版)”腾讯课堂</a></li>	   
+        <li><a href="http://list.youku.com/albumlist/show/id_51452688">C++版本数据结构</a></li>
+        <li><a href="https://ke.qq.com/course/288985?tuin=ac5537fd">Android studio 3.2安卓开发入门</a></li> 
+        <li><a href="http://study.163.com/course/introduction.htm?courseId=1004929015&utm_campaign=commission&utm_source=cp-400000000236023&utm_medium=share">“2018c++14语言第1季”网易课堂</a></li>
+          <li><a href="http://study.163.com/course/courseMain.htm?courseId=1004489020&utm_campaign=commission&utm_source=cp-400000000236023&utm_medium=share">“C语言快速入门”网易云课堂</a></li>
+        <li><a href="http://ke.qq.com/course/246134">“C语言快速入门”腾讯课堂</a></li> 
+	<li><a href="https://www.bilibili.com/video/av18629275/?from=search&seid=11082995444943504636">“从C到C++快速入门”网易云课堂</a></li> 
+	<li><a href="http://study.163.com/course/introduction/1004880010.htm">“从C到C++快速入门”网易云课堂</a></li> 
+	<li><a href="https://xuepro.xcguan.net/2017/11/15/Python%E6%95%99%E7%A8%8B-1.-Python%E6%98%AF%E4%BB%80%E4%B9%88/">Python 入门教程</a></li> 	
+    </ul>
+
+    <h5>相关链接</h5>
+    <ul>
+
+        <li><a href="https://weibo.com/u/6196175626?is_all=1">微博：教小白精通编程</a></li>
+	<li><a href="https://www.youtube.com/channel/UCIJLimsCMSfc3wHmevgj8Ng">Youtube频道</a></li>	   
+        <li><a href="https://study.163.com/provider/400000000236023/course.htm/">网易云课堂</a></li>
+        <li><a href="http://hwdong.ke.qq.com/">腾讯课堂</a></li> 
+        <li><a href="https://mp.weixin.qq.com/">微信公众号：教小白精通编程</a></li>
+    </ul>
+</div>
+
+<!-- English Version -->
+<!-- <div class="en post-container">
+    <blockquote><p>Yet another iOS Developer. <br>
+    Yet another Life-long Student.</p></blockquote>
+
+    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
+
+    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
+    
+    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
+
+    <h5>Talks</h5>
+
+    <ul>
+    <li><a href="https://github.com">GitHub</a></li>
+    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
+    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+    <li><a href="https://qiubaiying.github.io">BY</a></li>
+    </ul>
+</div> -->
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(){
+        var _hash = window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            window.location.hash = "#zh"
+        }else{
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
+
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+    <script type="text/javascript">
+    var gitalk = new Gitalk({
+    clientID: '{{site.gitalk.clientID}}',
+    clientSecret: '{{site.gitalk.clientSecret}}',
+    repo: '{{site.gitalk.repo}}',
+    owner: '{{site.gitalk.owner}}',
+    admin: ['{{site.gitalk.admin}}'],
+    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+    id: 'about'
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
+
+ <!-- disqus 评论框 start  -->
+{% if site.disqus.enable %}
+
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus.username}}";
+    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
+

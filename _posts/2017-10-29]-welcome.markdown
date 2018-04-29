@@ -1,0 +1,25 @@
+---
+layout:       post
+title:        "欢迎"
+subtitle:     "Welcome"
+date:         2017-10-29 10:00:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - C
+    - Java
+    - Python
+---
+
+## 教小白学精通编程
+   
+针对没有任何基础的朋友，提供计算机编程相关的开放课程，如各种编程语言（C/C++、Python、Java等）、数据结构与算法、图形图像处理、机器学习、智能游戏等课程的教学文章和视频课程。 本博客主要提供文字教材，视频教程等请关注:
+
+  * [微博“教小白学精通编程”](http://weibo.com/6196175626)
+
+  * [网易云课堂“C语言快速入门”](http://study.163.com/course/courseMain.htm?courseId=1004489020)
+
+   * [网易云课堂“数据结构”](http://study.163.com/course/introduction.htm?courseId=1004703004#/courseDetail?tab=1)

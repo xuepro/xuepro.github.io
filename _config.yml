@@ -1,0 +1,127 @@
+# Site settings
+title: 教小白精通编程
+SEOTitle: 教小白精通编程的博客 | Learn to programming Blog
+header-img: img/home_bg.jpg  #post-bg-desk.jpg
+email: xueprog@gmail.com
+description: "提供计算机编程教学的各种课程、教程、视频 | 教小白精通编程，Teach you how to programming | 这里是 @教小白精通编程 的博客，与你一起学习计算机编程，发现更大的世界。"
+keyword: "教小白学编程, 数据结构，Data structure, 图形学，图像处理，机器学习，深度学习，Deep Learning, MAchine learning,C语言, 教程, 课程, Java, Python, C, Java,Python, tutorialhuxpro, @huxpro, 教小白学精通编程, Learnin to Programming, Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+url: "https://xuepro.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/xuepro/xuepro.github.io.git" # you code repository
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "教小白学习计算机编程，<br>会者不难，难者不会，说编程难的都是智力非常笨的人"
+sidebar-avatar: /img/avatar_xuepro.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     619617562
+github_username:    xuepro
+twitter_username:   xuepro
+#facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
+#jianshu_username:   e71990ada2fd
+
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: xuepro
+
+#gitment
+gitment: 
+  enable: false
+
+# Gitalk
+gitalk: 
+  enable: true    #是否开启Gitalk评论
+  clientID: ae4c54297ba45e598976                           #生成的clientID
+  clientSecret: 383c2d9f89fa1742804beb09c11ede21bd0da333   #生成的clientSecret
+  repo: xuepro.github.io    #仓库名称
+  owner: xuepro    #github用户名
+  admin: xuepro
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: xuepro.github.io             # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+
+# Friends
+friends: [
+   {
+         title: "微博'教小白精通编程",
+         href: "http://weibo.com/6196175626"
+    },
+    {      
+         title: "网易云课堂",
+         href: "https://study.163.com/provider/400000000236023/course.htm/"   
+    },
+    {      
+         title: "Youtube频道",
+         href: "https://www.youtube.com/channel/UCIJLimsCMSfc3wHmevgj8Ng"   
+    },
+    {      
+         title: "腾讯课堂",
+         href: "http://hwdong.ke.qq.com"   
+    },{       
+         title: "小茶馆(友情赞助)",
+         href: "http://xcguan.net"
+    }
+]
