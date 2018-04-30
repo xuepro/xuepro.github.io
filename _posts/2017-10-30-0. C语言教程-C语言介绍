@@ -1,0 +1,28 @@
+---
+layout:       post
+title:        "0. C语言教程-C语言介绍"
+subtitle:     "0. Introduction to C Language"
+date:         2017-10-30 00:01:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - C
+---
+
+## C语言介绍
+  C語言最早由美国 AT&T 贝尔实验室的研究员丹尼斯·里奇（Dennis Ritchie）為了在PDP-11電腦上運行的Unix系統所設計出來的程式語言，由丹尼斯·里奇和肯·汤普逊在1969年到1973年之間完善。
+  
+  TIOBE 编程语言排行榜，过去 30 年 90% 时间里 C 都是独领风骚的，仅偶尔被 Java 超越.
+  
+  C语言不仅具有直接操作底层硬件（这些是Java、Python、PHP等其他语言无法做到的），而且C语言编程的程序执行要远远高于其他各种主流编程语言。
+  这就决定了C语言既能开发系统程序也能开发应用程序，特别是各种关键的系统程序和应用程序都需要用C语言来编写，如各种各种电脑、平板、手机的操作系统、工业控制系统，
+  大型的动漫制作图像处理软件如Maya, 3DMAx,PhotShop，各个著名的CAD软件如UG、SolodWorks、Pro\E、AutoCAD等都必须用C语言开发，
+  大型游戏也必须用C语言开发，即使如今用于大数据分析和人工智能的最火的Python语言，其底层工具人工智能平台如TensorFlow/Caffe等都是用C语言开发，
+  而Pyhton仅仅作为底层C语言API的包裹器。
+  
+  各种流行的高级语言，如Java/Python的运行环境或者说沙盒也都是用C语言开发的，可以说C语言是其他语言之母！
+  
+  C语言TIOBE 编程语言排行榜，过去 30 年 90% 时间里 C 都是独领风骚的，仅偶尔被 Java 超越。C 语言如愿成为了“2017 年度编程语言”的获得者。
