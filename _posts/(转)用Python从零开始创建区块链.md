@@ -1,4 +1,19 @@
-本文主要内容翻译自Learn Blockchains by Building One
+---
+layout:       post
+title:        "用Python从零开始创建区块链"
+subtitle:     "Learn Blockchains by Building One"
+date:         2017-10-29 00:00:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python
+    - 区块链
+---
+
+本文主要内容翻译自[Learn Blockchains by Building One](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46)
 本文[原始链接](https://learnblockchain.cn/2017/10/27/build_blockchain_by_python/),转载请注明出处。
 作者认为最快的学习区块链的方式是自己创建一个，本文就跟随作者用Python来创建一个区块链。
 
