@@ -2,7 +2,7 @@
 layout:       post
 title:        "用Python从零开始创建区块链"
 subtitle:     "Learn Blockchains by Building One"
-date:         2017-10-29 00:00:00
+date:         2018-04-28 00:00:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
 header-mask:  0.3
