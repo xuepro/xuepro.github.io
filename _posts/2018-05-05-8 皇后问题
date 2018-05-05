@@ -1,0 +1,98 @@
+---
+layout:       post
+title:        "8 皇后问题"
+subtitle:     "8-Queens Problem (recursion)"
+date:         2018-05-25 00:00:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+     
+---
+
+## 8 皇后问题(递归算法)
+
+  把棋盘存储为一个N维数组a[N]，数组中第i个元素的值代表第i行的皇后位置，这样便可以把问题的空间规模压缩为一维O(N)，在判断是否冲突时也很简单，首先每行只有一个皇后，且在数组中只占据一个元素的位置，行冲突就不存在了，其次是列冲突，判断一下是否有a[i]与当前要放置皇后的列j相等即可。至于斜线冲突，通过观察可以发现所有在斜线上冲突的皇后的位置都有规律即它们所在的行列互减的绝对值相等，即| row – i | = | col – a[i] | 。这样某个位置是否可以放置皇后的问题已经解决。
+
+```python
+BOARD_SIZE = 4
+
+class BailOut(Exception):
+    pass
+
+def validate(queens):
+    left = right = col = queens[-1]
+    for r in reversed(queens[:-1]):
+        left, right = left-1, right+1
+        if r in (left, col, right):
+            raise BailOut
+
+def add_queen(queens):
+    for i in range(BOARD_SIZE):
+        test_queens = queens + [i]
+        try:
+            validate(test_queens)
+            if len(test_queens) == BOARD_SIZE:
+                return test_queens
+            else:
+                return add_queen(test_queens)
+        except BailOut:
+            pass
+    raise BailOut
+
+queens = add_queen([])
+print(queens)
+print("\n".join(". "*q + "Q " + ". "*(BOARD_SIZE-q-1) for q in queens))
+
+
+print("\n\n---all solution-------\n")
+def add_queen_all(queens,row):
+    if row==(BOARD_SIZE):
+        print(queens)
+        print("\n".join(". "*q + "Q " + ". "*(BOARD_SIZE-q-1) for q in queens))
+        print("\n")
+
+    for col in range(BOARD_SIZE):
+        test_queens = queens + [col]
+        try:
+            validate(test_queens)
+            add_queen_all(test_queens,row+1)
+        except BailOut:
+            continue
+    
+add_queen2([],0)
+```
+结果：
+```
+[1, 3, 0, 2]
+. Q . . 
+. . . Q 
+Q . . . 
+. . Q . 
+
+
+---all solution-------
+
+[1, 3, 0, 2]
+. Q . . 
+. . . Q 
+Q . . . 
+. . Q . 
+
+
+[2, 0, 3, 1]
+. . Q . 
+Q . . . 
+. . . Q 
+. Q . . 
+```
+
+参考：
+[範例：八皇后](https://programming.im.ncnu.edu.tw/exapmle_for_java/9.htm)
+
+[N皇后问题的两个最高效的算法](https://blog.csdn.net/hackbuteer1/article/details/6657109)
+
+[The eight queens puzzle in Python](https://solarianprogrammer.com/2017/11/20/eight-queens-puzzle-python/)
