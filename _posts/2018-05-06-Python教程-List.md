@@ -343,7 +343,7 @@ copy() - Returns a shallow copy of the list
 
 **sort方法**
 
-参考[sort](https://www.programiz.com/python-programming/methods/list/sort)
+
 
 list.sort(key=..., reverse=...)  #修改原List
 
