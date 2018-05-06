@@ -1,4 +1,3 @@
-
 ---
 layout:       post
 title:        "Python教程-List"
@@ -11,6 +10,7 @@ catalog:      true
 multilingual: true
 tags:
     - Python 
+    
 ---    
      
 ## List
