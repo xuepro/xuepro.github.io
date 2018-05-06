@@ -1,14 +1,22 @@
 
+---
+layout:       post
+title:        "Python教程-List"
+subtitle:     "Python tutorial-List"
+date:         2018-05-06 11:10:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+     
+     
 ## List
     表示一列元素，用于将不同的值组合在一起，所有元素可以写在一对方括号[]里并以逗号','隔开。这些元素的数据类型可以不同。例如
    
   
-  **参考:**
-  
-  [List](https://docs.python.org/3/tutorial/introduction.html#lists)
-  
-  [list2](https://www.programiz.com/python-programming/list)
-   
 
 
 ```python
