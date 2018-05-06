@@ -277,11 +277,11 @@ print(my_list)
     NameError: name 'my_list' is not defined
 
 
+```
 
-```python
 
 可以通过remove删除特定的元素，注意：此时传递给remove的是这个元素的值而不是下标
-```
+
 
 
 ```python
@@ -302,16 +302,14 @@ animal.remove('rabbit')
 print('Updated animal list: ', animal)
 ```
 
-    ['r', 'o', 'b', 'l', 'e', 'm']
-    Updated animal list:  ['cat', 'dog', 'guinea pig']
-    
-
-
 ```python
 
-List的pop方法可以删除指定下标的元素，如果没有指定下标，则删除最后一个元素。而clear()方法则清空整个list，但没有销毁它
+ ['r', 'o', 'b', 'l', 'e', 'm']
+ Updated animal list:  ['cat', 'dog', 'guinea pig']
+ 
+``` 
 
-```
+List的pop方法可以删除指定下标的元素，如果没有指定下标，则删除最后一个元素。而clear()方法则清空整个list，但没有销毁它
 
 
 ```python
@@ -397,17 +395,15 @@ pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
 pairs.sort(key=takeSecond)  #key是一个用于比较的关键字函数，即根据这个作用于每个元素的函数的结果值进行比较
 
 print('Sorted list:', pairs)
+
+
+Sorted list: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+    
 ```
 
-    Sorted list: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
-    
-
-
-```python
 
 也可以用lambda函数代替普通的函数：
 
-```
 
 
 ```python
