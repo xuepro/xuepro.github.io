@@ -93,7 +93,7 @@ print(my_list[3])
 print(my_list[-4])
 ```
 
-
+```python
     ------------------------------------------------
 
     IndexError     Traceback (most recent call last)
@@ -105,10 +105,10 @@ print(my_list[-4])
     
 
     IndexError: list index out of range
-
+```
 
 可以用过切片操作(slicing operator)即冒号:(colon)访问一个范围的多个元素，格式为：
-```
+```python
    list[start:end]
 ```
 表示查询从start到end之间(但不包含end)的那些元素。
@@ -132,12 +132,12 @@ print(my_list[5:])   #从第6个往后的所有元素
 # elements beginning to end
 print(my_list[:])     #所有元素
 ```
-
+```python
     ['o', 'g', 'r']
     ['p', 'r', 'o', 'g']
     ['a', 'm', 'i', 'z']
     ['p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z']
-    
+```    
 
 可以用下面的图理解正负下标
 
@@ -152,9 +152,9 @@ my_list = ['p','r','o','g','r','a','m','i','z']
 my_list[1] = 34
 print(my_list)
 ```
-
+```python
     ['p', 34, 'o', 'g', 'r', 'a', 'm', 'i', 'z']
-    
+```   
 
 
 ```python
@@ -162,26 +162,26 @@ my_list[2:6] = [25,8]  #用一个新的list[25,8]替换切片my_list[2:6]
 print(my_list)
 ```
 
+```python
     ['p', 34, 25, 8, 'm', 'i', 'z']
-    
-
+```   
 
 ```python
 my_list[2:5]=[]  #用一个空的list替换切片，相当于删除切片中的数据元素
 print(my_list)
 ```
-
+```python
     ['p', 34, 'i', 'z']
-    
+ ```   
 
 
 ```python
 my_list[2:2]=["hello","world"] #相当于在下标2除插入一组元素
 print(my_list)
 ```
-
+```python
     ['p', 34, 'hello', 'world', 'i', 'z']
-    
+```    
 
 我们还可以通过list的方法，比如append()在list最后添加一个元素或用extend()添加所个元素。例如
 
@@ -258,7 +258,7 @@ del my_list
 # Error: List not defined
 print(my_list)
 ```
-
+```python
     ['p', 'r', 'b', 'l', 'e', 'm']
     ['p', 'm']
     
@@ -281,7 +281,6 @@ print(my_list)
 
 
 可以通过remove删除特定的元素，注意：此时传递给remove的是这个元素的值而不是下标
-
 
 
 ```python
@@ -321,11 +320,11 @@ print(my_list)
 my_list.clear()
 print(my_list)
 ```
-
+```python
     ['p', 'r', 'b', 'l', 'e', 'm']
     ['p', 'r', 'b', 'l', 'e']
     []
-    
+ ```   
 
 ### Python List Methods
 
@@ -345,14 +344,14 @@ copy() - Returns a shallow copy of the list
 
 **sort方法**
 
-
+```
 
 list.sort(key=..., reverse=...)  #修改原List
-
+```
 或
-
+```
 sorted(list, key=..., reverse=...) #不修改原List,返回一个 iterable list
-
+```
 **sort()的参数Parameters**
 
 * **reverse** - 如是是true,则以逆序(下降次序)排序 
@@ -370,9 +369,9 @@ vowels.sort()  #以正序排序
 
 print('Sorted list:', vowels)
 ```
-
+```python
     Sorted list: ['a', 'e', 'i', 'o', 'u']
-    
+```   
 
 
 ```python
@@ -380,9 +379,9 @@ vowels.sort(reverse=True)   # 以逆序排序
 
 print('Sorted list (in Descending):', vowels)
 ```
-
+```
     Sorted list (in Descending): ['u', 'o', 'i', 'e', 'a']
-    
+ ```   
 
 
 ```python
@@ -395,15 +394,15 @@ pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
 pairs.sort(key=takeSecond)  #key是一个用于比较的关键字函数，即根据这个作用于每个元素的函数的结果值进行比较
 
 print('Sorted list:', pairs)
+```
 
-
+```python
 Sorted list: [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
     
 ```
 
 
 也可以用lambda函数代替普通的函数：
-
 
 
 ```python
