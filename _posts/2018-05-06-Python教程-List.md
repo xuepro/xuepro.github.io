@@ -11,7 +11,7 @@ catalog:      true
 multilingual: true
 tags:
     - Python 
-     
+---    
      
 ## List
     表示一列元素，用于将不同的值组合在一起，所有元素可以写在一对方括号[]里并以逗号','隔开。这些元素的数据类型可以不同。例如
