@@ -39,7 +39,7 @@ plt.show()
 ```
 
 
-![png](LinearRegression_files/LinearRegression_2_0.png)
+![png](https://utkuufuk.github.io/2018/04/21/linear-regression/linear-regression_3_0.png)
 
 
  参考: [[Matplotlib] subplot 理解](https://blog.csdn.net/u012762410/article/details/78968708)
@@ -123,7 +123,7 @@ fig
 
 
 
-![png](LinearRegression_files/LinearRegression_15_0.png)
+![png](https://utkuufuk.github.io/2018/04/21/linear-regression/linear-regression_15_0.png)
 
 
 
@@ -176,7 +176,7 @@ plt.show()
 ```
 
 
-![png](LinearRegression_files/LinearRegression_20_0.png)
+![png](https://utkuufuk.github.io/2018/04/21/linear-regression/linear-regression_19_0.png)
 
 
 对这几个学习率，梯度下降都能能正确地工作，并且发现学习率低的需要更多的迭代次数。
@@ -198,7 +198,7 @@ plt.show()
 ```
 
 
-![png](LinearRegression_files/LinearRegression_22_0.png)
+![png](https://utkuufuk.github.io/2018/04/21/linear-regression/linear-regression_21_0.png)
 
 
 结果不妙！说明学习率太大了，尽管梯度下降法总能沿着正确的方向前进，但由于学习率太大，前进的步伐太大，越过了目标值（最佳解），因此代价**发散**而不是**收敛**。
