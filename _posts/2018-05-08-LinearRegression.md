@@ -1,4 +1,18 @@
 
+---
+layout:       post
+title:        "Python 求解Linear Regression的代码"
+subtitle:     "LinearRegression"
+date:         2018-05-06 11:10:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+    
+---    
 
 ```python
 
