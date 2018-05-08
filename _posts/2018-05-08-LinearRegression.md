@@ -46,6 +46,7 @@ plt.show()
  参考: [[Matplotlib] subplot 理解](https://blog.csdn.net/u012762410/article/details/78968708)
 
 ## Hypothesis Function 假设函数
+
 我们可以用一个直线（线性函数）来表示城市人口和利润之间的关系。即用下面的假设函数
 
 $$H_\theta(x) = $$
