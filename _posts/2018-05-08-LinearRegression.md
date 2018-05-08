@@ -14,10 +14,11 @@ tags:
     
 ---    
 
+
 ```python
 
 ```
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 
 ```python
 import numpy as np
@@ -49,7 +50,7 @@ plt.show()
 
 我们可以用一个直线（线性函数）来表示城市人口和利润之间的关系。即用下面的假设函数
 
-$$H_\theta(x) = $$
+$$ H_\theta(x) = $$
 
 $$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
 
