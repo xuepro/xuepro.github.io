@@ -14,7 +14,7 @@ tags:
     
 ---    
 
-[原文]（Training a Simple Linear Regression Model From Scratch）
+[原文](Training a Simple Linear Regression Model From Scratch)
 
 
 ## 问题和数据集 Problem & Dataset
