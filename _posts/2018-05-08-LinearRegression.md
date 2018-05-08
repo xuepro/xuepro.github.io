@@ -108,7 +108,7 @@ print(predictions)
 
 代价函数Cost Function可以表示成下面的形式
 
-$$J(\theta) = \frac{1}{2m}\sum_{n=1}^{m}(h_\theta(x^(i))-y^(i))^2$$
+$$J(\theta) = \frac{1}{2m}\sum_{n=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2$$
 
 其中m表示样本的个数。
 
@@ -131,7 +131,7 @@ print('The initial cost is:', cost(theta, X, y))
 
 为了求解未知的模型参数$$\theta$$，可以用梯度下降法来迭代地求解:
 
-$$ \theta_j: = \theta_j -alpha\frac{1}{m}\sum_{n=1}^{m}(h_\theta(x^(i))-y^(i))x_j^(i)$$
+$$ \theta_j: = \theta_j -alpha\frac{1}{m}\sum_{n=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}$$
 
 ```python
 def gradient_descent(X, y, alpha, num_iters):
