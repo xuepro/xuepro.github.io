@@ -14,7 +14,8 @@ tags:
     
 ---    
 
-[原文](Training a Simple Linear Regression Model From Scratch)
+[原文Training a Simple Linear Regression Model From Scratch](https://utkuufuk.github.io/2018/04/21/linear-regression/) 
+
 
 
 ## 问题和数据集 Problem & Dataset
