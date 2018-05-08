@@ -53,6 +53,8 @@ $$H_\theta(x) = $$
 
 $$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
 
+$J(\theta) = \dfrac{1}{2m}\sum\limits_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2$
+
 对于现在的问题，数据的特征只有1个，因此，可以写成下面的形式
 
 
