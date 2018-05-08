@@ -14,6 +14,7 @@ tags:
     
 ---    
 
+[原文]（Training a Simple Linear Regression Model From Scratch）
 
 ```python
 
@@ -51,7 +52,7 @@ plt.show()
 我们可以用一个直线（线性函数）来表示城市人口和利润之间的关系。即用下面的假设函数
 
 $$ h_\theta(x) = \theta_0+\theta_1x_1+\theta_2x_2+ ...+\theta_nx_n = (\theta_0,\theta_1,...\theta_n)(x_0,x_1,x_2,...x_n)^T
- = \theta^Tx $$
+\theta^Tx $$
 
 对于现在的问题，数据的特征只有1个，因此，可以写成下面的形式
 
@@ -62,7 +63,8 @@ $$ h_\theta(x) = \theta_0+\theta_1x_1 $$
 ![](https://utkuufuk.github.io/2018/04/21/linear-regression/intercept_term.png)
 
 
-假设函数可以看成x和未知参数($$\theta$$)的点积，未知参数(theta)可以表示成一个向量$$\thata^T$$
+假设函数可以看成x和未知参数($$\theta$$)的点积，未知参数(theta)可以表示成一个向量
+ $$ \theta^T  =(\theta_0,\theta_1,...\theta_n) $$ 
 
 
 ```python
