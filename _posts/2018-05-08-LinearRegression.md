@@ -51,7 +51,7 @@ plt.show()
 我们可以用一个直线（线性函数）来表示城市人口和利润之间的关系。即用下面的假设函数
 
 $$ h_\theta(x) = \theta_0+\theta_1x_1+\theta_2x_2+ ...+\theta_nx_n = (\theta_0,\theta_1,...\theta_n)(x_0,x_1,x_2,...x_n)^T
-\theta^Tx $$
+ = \theta^Tx $$
 
 对于现在的问题，数据的特征只有1个，因此，可以写成下面的形式
 
