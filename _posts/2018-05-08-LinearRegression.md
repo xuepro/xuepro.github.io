@@ -101,8 +101,15 @@ print(predictions)
       0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
       0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
       0.  0.  0.  0.  0.  0.  0.]
-    
+    
+训练模型就是最小化一个Cost Function(代价函数)，这个代价就是就是测量目标值$$y$$和用训练模型得到的预测值之间$$h_\theta(x)$$的误差。
 
+代价函数Cost Function可以表示成下面的形式
+$$J(\theta) = \frac{1}{2m}\sum_{n=1}^{m}(h_\theta(x^i)-y^i)^2$$
+
+其中m表示样本的个数。
+
+计算Cost Function的Python代码如下
 
 ```python
 def cost(theta, X, y):
