@@ -17,7 +17,7 @@ tags:
 [原文]（Training a Simple Linear Regression Model From Scratch）
 
 
-## Problem & Dataset问题和数据集
+## 问题和数据集 Problem & Dataset
 
 
 我们看Andrew Ng的机器学习课程的一个回归问题(regression problem)，此问题的目标是训练一个模型以便准确预测一个城市中的餐车的利润。
@@ -59,7 +59,7 @@ plt.show()
 
  参考: [[Matplotlib] subplot 理解](https://blog.csdn.net/u012762410/article/details/78968708)
 
-## Hypothesis Function 假设函数
+## 假设函数 Hypothesis Function 
 
 我们可以用一个直线（线性函数）来表示城市人口和利润之间的关系。即用下面的假设函数
 
@@ -125,9 +125,9 @@ print('The initial cost is:', cost(theta, X, y))
 
 ```
   The initial cost is: 32.0727338775
-```   
+```
 
-## Gradient Descent Algorithm
+## 梯度下降算法Gradient Descent Algorithm
 
 为了求解未知的模型参数$$\theta$$，可以用梯度下降法来迭代地求解:
 
@@ -160,7 +160,7 @@ fig
 
 
 
-## Debugging调试
+## 调试Debugging
 
 
 对于只有1个特性的数据，我们可以画出拟合的曲线，通过视觉直接观察拟合的模型是否准确。但是对于1个特征的数据，则不可能轻松可视化拟合的模型。怎么才能知道结果如何呢？
