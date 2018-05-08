@@ -2,6 +2,7 @@
 layout:       post
 title:        "Python 求解Linear Regression的代码"
 subtitle:     "LinearRegression"
+mathjax: true
 date:         2018-05-06 11:10:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
@@ -48,6 +49,8 @@ plt.show()
 我们可以用一个直线（线性函数）来表示城市人口和利润之间的关系。即用下面的假设函数
 
 $$H_\theta(x) = $$
+
+$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
 
 对于现在的问题，数据的特征只有1个，因此，可以写成下面的形式
 
