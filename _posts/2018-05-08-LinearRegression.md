@@ -55,7 +55,7 @@ $$ h_\theta(x) = \theta_0+\theta_1x_1+\theta_2x_2+ ...+\theta_nx_n = (\theta_0,\
 
 对于现在的问题，数据的特征只有1个，因此，可以写成下面的形式
 
-$$ h_\theta(x) = \theta_0+\theta_1x_1
+$$ h_\theta(x) = \theta_0+\theta_1x_1 $$
 
 这个直线函数如图所示
 
