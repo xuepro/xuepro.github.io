@@ -145,6 +145,7 @@ def gradient_descent(X, y, alpha, num_iters):
     return theta                            # return optimized parameters
 ```
 
+我们用这个函数训练我们的模型并画出假设函数
 
 ```python
 theta = gradient_descent(X, y, 0.02, 600)   # run GD for 600 iterations with learning rate = 0.02
