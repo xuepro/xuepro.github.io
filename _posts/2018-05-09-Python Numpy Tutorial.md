@@ -814,12 +814,33 @@ imsave('assets/cat_tinted.jpg', img_tinted)
 
 ### MATLAB文件
 
-函数scipy.io.loadmat和scipy.io.savemat允许你读和写MATLAB文件。具体请查看文档。
+函数scipy.io.loadmat和scipy.io.savemat允许你读和写MATLAB文件。可在[文档](http://docs.scipy.org/doc/scipy/reference/io.html)查看它们。
 
-点之间的距离
+**点之间的距离**
+
 SciPy定义了一些有用的函数，可以计算集合中点之间的距离。
 
 函数scipy.spatial.distance.pdist能够计算集合中所有两点之间的距离：
+```python
+import numpy as np
+from scipy.spatial.distance import pdist, squareform
+
+# Create the following array where each row is a point in 2D space:
+# [[0 1]
+#  [1 0]
+#  [2 0]]
+x = np.array([[0, 1], [1, 0], [2, 0]])
+print(x)
+
+# Compute the Euclidean distance between all rows of x.
+# d[i, j] is the Euclidean distance between x[i, :] and x[j, :],
+# and d is the following array:
+# [[ 0.          1.41421356  2.23606798]
+#  [ 1.41421356  0.          1.        ]
+#  [ 2.23606798  1.          0.        ]]
+d = squareform(pdist(x, 'euclidean'))
+print(d)
+```
 
 [原文](https://cs231n.github.io/python-numpy-tutorial/)
 [参考](https://zhuanlan.zhihu.com/p/20878530)
