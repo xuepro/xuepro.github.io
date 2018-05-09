@@ -1,18 +1,18 @@
 ---
 layout:       post
-title:        "Python numpy 教程"
-subtitle:     "Python Numpy Tutorial"
-date:         2018-05-08 09:33:00
+title:        "Stanford 231课程：Python Numpy Tutorial教程"
+subtitle:     "cs231 course：Python Numpy Tutorial"
+date:         2018-05-09 13:51:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - Python
-
----    
-
+    - Python 
+    
+---    
+     
 
 ## Python Numpy 教程(Python Numpy Tutorial)
 
