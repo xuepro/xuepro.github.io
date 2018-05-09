@@ -2,7 +2,7 @@
 layout:       post
 title:        "Python numpy 教程"
 subtitle:     "Python Numpy Tutorial"
-date:         2018-05-08 17:51:00
+date:         2018-05-08 09:33:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
 header-mask:  0.3
