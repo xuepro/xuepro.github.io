@@ -600,7 +600,7 @@ print(np.divide(x, y))
 #  [ 1.73205081  2.        ]]
 print(np.sqrt(x))
 ```
-和MATLAB不同，```*```是元素逐个相乘，而不是矩阵乘法。在Numpy中使用dot来进行矩阵乘法：
+和MATLAB不同，```*```是元素逐个相乘，而不是矩阵乘法。我们用dot来进行向量的内积、矩阵乘以向量和矩阵乘法。dot既可以是numpy module（模块）的函数也可以是fsdfs
 ```python
 import numpy as np
 
