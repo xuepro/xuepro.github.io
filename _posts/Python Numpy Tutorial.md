@@ -544,3 +544,21 @@ print(a[a > 2])     # Prints "[3 4 5 6]"
 
 为了简短，我们省略了numpy array indexing的许多细节如果你想知道更多，可以看[文档](http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)。
 
+### 数据类型
+
+每个Numpy数组都是数据类型相同的元素组成的网格。Numpy提供了很多的数值数据类型(numeric datatypes)用于创建数组。当你创建数组的时候，Numpy会尝试猜测数组的数据类型，但创建数组的函数通常使用可选参数显式地指定数据类型，例如：
+```python
+import numpy as np
+
+x = np.array([1, 2])   # Let numpy choose the datatype
+print(x.dtype)         # Prints "int64"
+
+x = np.array([1.0, 2.0])   # Let numpy choose the datatype
+print(x.dtype)             # Prints "float64"
+
+x = np.array([1, 2], dtype=np.int64)   # Force a particular datatype
+print(x.dtype)                         # Prints "int64"
+```
+
+关于numpy datatypes的全部信息可查看[文档](http://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)。
+
