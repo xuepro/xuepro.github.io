@@ -1,4 +1,3 @@
-
 ---
 layout:       post
 title:        "Python numpy 教程"
@@ -299,3 +298,119 @@ from math import sqrt
 nums = {int(sqrt(x)) for x in range(30)}
 print(nums)  # Prints "{0, 1, 2, 3, 4, 5}"
 ```
+
+**元组Tuples**
+
+元组是一个值的有序列表（不可改变）。从很多方面来说，元组和列表都很相似。和列表最重要的不同在于，元组可以在字典中用作键，还可以作为集合的元素，而列表不行。下面是一个小例子：
+```python
+d = {(x, x + 1): x for x in range(10)}  # Create a dictionary with tuple keys
+t = (5, 6)        # Create a tuple
+print(type(t))    # Prints "<class 'tuple'>"
+print(d[t])       # Prints "5"
+print(d[(1, 2)])  # Prints "1"
+```
+[文档](https://docs.python.org/3.5/tutorial/datastructures.html#tuples-and-sequences)有更多元组的信息。
+
+### 函数Functions
+
+Python函数使用def来定义函数.例如：
+```python
+def sign(x):
+    if x > 0:
+        return 'positive'
+    elif x < 0:
+        return 'negative'
+    else:
+        return 'zero'
+
+for x in [-1, 0, 1]:
+    print(sign(x))
+# Prints "negative", "zero", "positive"
+```
+我们常常使用可选参数来定义函数：
+
+```python
+def hello(name, loud=False):
+    if loud:
+        print('HELLO, %s!' % name.upper())
+    else:
+        print('Hello, %s' % name)
+
+hello('Bob') # Prints "Hello, Bob"
+hello('Fred', loud=True)  # Prints "HELLO, FRED!"
+```
+
+Python函数的更多信息，可以查看[文档](https://docs.python.org/3.5/tutorial/controlflow.html#defining-functions)。
+
+### 类Classes
+
+在Python对于类的语法是直接的：
+```python
+class Greeter(object):
+
+    # Constructor
+    def __init__(self, name):
+        self.name = name  # Create an instance variable
+
+    # Instance method
+    def greet(self, loud=False):
+        if loud:
+            print('HELLO, %s!' % self.name.upper())
+        else:
+            print('Hello, %s' % self.name)
+
+g = Greeter('Fred')  # Construct an instance of the Greeter class
+g.greet()            # Call an instance method; prints "Hello, Fred"
+g.greet(loud=True)   # Call an instance method; prints "HELLO, FRED!"
+```
+
+你可以在[文档](https://docs.python.org/3.5/tutorial/classes.html)中阅读更多Python类的信息
+
+## Numpy
+
+Numpy是Python中用于科学计算的核心库。它提供了高性能的多维数组对象，以及相关工具。
+
+## 数组Arrays
+
+一个numpy数组是一个由不同数值组成的网格。网格中的数据都是同一种数据类型，可以通过非负整型数的元组来访问。维度的数量被称为数组的阶，数组的大小是一个由整型数构成的元组，可以描述数组不同维度上的大小。
+
+我们可以从列表创建数组，然后利用方括号访问其中的元素：
+```python
+import numpy as np
+
+a = np.array([1, 2, 3])   # Create a rank 1 array
+print(type(a))            # Prints "<class 'numpy.ndarray'>"
+print(a.shape)            # Prints "(3,)"
+print(a[0], a[1], a[2])   # Prints "1 2 3"
+a[0] = 5                  # Change an element of the array
+print(a)                  # Prints "[5, 2, 3]"
+
+b = np.array([[1,2,3],[4,5,6]])    # Create a rank 2 array
+print(b.shape)                     # Prints "(2, 3)"
+print(b[0, 0], b[0, 1], b[1, 0])   # Prints "1 2 4"
+```
+
+Numpy还提供了很多函数用于创建数组：
+```python
+import numpy as np
+
+a = np.zeros((2,2))   # Create an array of all zeros
+print(a)              # Prints "[[ 0.  0.]
+                      #          [ 0.  0.]]"
+
+b = np.ones((1,2))    # Create an array of all ones
+print(b)              # Prints "[[ 1.  1.]]"
+
+c = np.full((2,2), 7)  # Create a constant array
+print(c)               # Prints "[[ 7.  7.]
+                       #          [ 7.  7.]]"
+
+d = np.eye(2)         # Create a 2x2 identity matrix
+print(d)              # Prints "[[ 1.  0.]
+                      #          [ 0.  1.]]"
+
+e = np.random.random((2,2))  # Create an array filled with random values
+print(e)                     # Might print "[[ 0.91940167  0.08143941]
+                             #               [ 0.68744134  0.87236687]]"
+```
+你可以在[文档](http://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)中阅读数组创建的其他方法。
