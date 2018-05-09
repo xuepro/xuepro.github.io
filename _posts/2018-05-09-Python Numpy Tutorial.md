@@ -679,7 +679,100 @@ for i in range(4):
 #  [11 11 13]]
 print(y)
 ```
+这是可行的，但当矩阵x非常大，用显式循环来计算就会变得很慢很慢。注意到，将向量v加到矩阵x的每一行，等价于将多个向量v垂直堆积(stacking multiple copies)起来构成一个矩阵vv，然后对x和vv进行逐个元素的求和，我们这样来实现
+ ```python
+ import numpy as np
 
+# We will add the vector v to each row of the matrix x,
+# storing the result in the matrix y
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+vv = np.tile(v, (4, 1))   # Stack 4 copies of v on top of each other
+print(vv)                 # Prints "[[1 0 1]
+                          #          [1 0 1]
+                          #          [1 0 1]
+                          #          [1 0 1]]"
+y = x + vv  # Add x and vv elementwise
+print(y)  # Prints "[[ 2  2  4
+          #          [ 5  5  7]
+          #          [ 8  8 10]
+          #          [11 11 13]]"
+ ```
+Numpy broadcasting(广播)允许我们进行这种计算而不需要实际创建多个v的拷贝，考虑使用这种广播的版本：
+```python
+import numpy as np
+
+# We will add the vector v to each row of the matrix x,
+# storing the result in the matrix y
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+y = x + v  # Add v to each row of x using broadcasting
+print(y)  # Prints "[[ 2  2  4]
+          #          [ 5  5  7]
+          #          [ 8  8 10]
+          #          [11 11 13]]"
+```
+这一行y = x + v 能正常工作，即使x 具有形状 shape (4, 3) 而v 具有形状 (3,)。借助于广播，这一行能够工作就好像v 实际具有形状(4, 3)、和运算时逐个元素进行的。
+
+对两个数组使用广播机制要遵守下列规则：
+```
+如果数组的秩不同，使用1来将秩较小的数组进行扩展，直到两个数组的尺寸的长度都一样。
+如果两个数组在某个维度上的长度是一样的，或者其中一个数组在该维度上长度为1，那么我们就说这两个数组在该维度上是相容的。
+如果两个数组在所有维度上都是相容的，他们就能使用广播。
+如果两个输入数组的尺寸不同，那么注意其中较大的那个尺寸。因为广播之后，两个数组的尺寸将和那个较大的尺寸一样。
+在任何一个维度上，如果一个数组的长度为1，另一个数组长度大于1，那么在该维度上，就好像是对第一个数组进行了复制。
+如果上述解释看不明白，可以读一读文档和这个解释。译者注：强烈推荐阅读文档中的例子。
+```
+
+如何这个解释还不够清楚，可以查看[文档](http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html)和[这个解释](http://wiki.scipy.org/EricsBroadcastingDoc)
+
+支持广播机制的函数是全局函数。可以在[文档](http://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)中查找全局函数的列表。
+
+下面是广播的一些例子：
+```python
+import numpy as np
+
+# Compute outer product of vectors
+v = np.array([1,2,3])  # v has shape (3,)
+w = np.array([4,5])    # w has shape (2,)
+# To compute an outer product, we first reshape v to be a column
+# vector of shape (3, 1); we can then broadcast it against w to yield
+# an output of shape (3, 2), which is the outer product of v and w:
+# [[ 4  5]
+#  [ 8 10]
+#  [12 15]]
+print(np.reshape(v, (3, 1)) * w)
+
+# Add a vector to each row of a matrix
+x = np.array([[1,2,3], [4,5,6]])
+# x has shape (2, 3) and v has shape (3,) so they broadcast to (2, 3),
+# giving the following matrix:
+# [[2 4 6]
+#  [5 7 9]]
+print(x + v)
+
+# Add a vector to each column of a matrix
+# x has shape (2, 3) and w has shape (2,).
+# If we transpose x then it has shape (3, 2) and can be broadcast
+# against w to yield a result of shape (3, 2); transposing this result
+# yields the final result of shape (2, 3) which is the matrix x with
+# the vector w added to each column. Gives the following matrix:
+# [[ 5  6  7]
+#  [ 9 10 11]]
+print((x.T + w).T)
+# Another solution is to reshape w to be a column vector of shape (2, 1);
+# we can then broadcast it directly against x to produce the same
+# output.
+print(x + np.reshape(w, (2, 1)))
+
+# Multiply a matrix by a constant:
+# x has shape (2, 3). Numpy treats scalars as arrays of shape ();
+# these can be broadcast together to shape (2, 3), producing the
+# following array:
+# [[ 2  4  6]
+#  [ 8 10 12]]
+print(x * 2)
+```
 
 
 [原文](https://cs231n.github.io/python-numpy-tutorial/)
