@@ -210,4 +210,92 @@ for x in nums:
 print(squares)   # Prints [0, 1, 4, 9, 16]
 ```
 
+使用**列表综合式(List comprehensions)**,可以让代码更简单
 
+```python
+nums = [0, 1, 2, 3, 4]
+squares = [x ** 2 for x in nums]
+print(squares)   # Prints [0, 1, 4, 9, 16]
+```
+**列表综合式(List comprehensions)**,还可以包含条件：
+```python
+nums = [0, 1, 2, 3, 4]
+even_squares = [x ** 2 for x in nums if x % 2 == 0]
+print(even_squares)  # Prints "[0, 4, 16]"
+```
+
+**字典(Dictionaries)**
+
+字典用来储存（键, 值）对，类似于Java中的Map或Javascript中的对象。你可以这样使用：
+```python
+d = {'cat': 'cute', 'dog': 'furry'}  # Create a new dictionary with some data
+print(d['cat'])       # Get an entry from a dictionary; prints "cute"
+print('cat' in d)     # Check if a dictionary has a given key; prints "True"
+d['fish'] = 'wet'     # Set an entry in a dictionary
+print(d['fish'])      # Prints "wet"
+# print(d['monkey'])  # KeyError: 'monkey' not a key of d
+print(d.get('monkey', 'N/A'))  # Get an element with a default; prints "N/A"
+print(d.get('fish', 'N/A'))    # Get an element with a default; prints "wet"
+del d['fish']         # Remove an element from a dictionary
+print(d.get('fish', 'N/A')) # "fish" is no longer a key; prints "N/A"
+```
+你可以道字典的所有信息，请查阅[文档](https://docs.python.org/3.5/library/stdtypes.html#dict)。
+
+**循环Loops** ：在字典中，很容易迭代字典中的键。
+
+```python
+d = {'person': 2, 'cat': 4, 'spider': 8}
+for animal in d:
+    legs = d[animal]
+    print('A %s has %d legs' % (animal, legs))
+# Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8 legs"
+```
+
+如果你想要访问键和它们对应的值，可以使用items方法：
+```python
+d = {'person': 2, 'cat': 4, 'spider': 8}
+for animal, legs in d.items():
+    print('A %s has %d legs' % (animal, legs))
+# Prints "A person has 2 legs", "A cat has 4 legs", "A spider has 8 legs"
+```
+
+**字典综合式(Dictionary comprehensions)** ：和**列表综合式(List comprehensions)** 类似，但是允许你轻松地构建字典。
+```python
+nums = [0, 1, 2, 3, 4]
+even_num_to_square = {x: x ** 2 for x in nums if x % 2 == 0}
+print(even_num_to_square)  # Prints "{0: 0, 2: 4, 4: 16}"
+```
+
+**集合Sets**
+
+集合是不同元素的无序集合。作为一个例子，看下面的：
+```python
+animals = {'cat', 'dog'}
+print('cat' in animals)   # Check if an element is in a set; prints "True"
+print('fish' in animals)  # prints "False"
+animals.add('fish')       # Add an element to a set
+print('fish' in animals)  # Prints "True"
+print(len(animals))       # Number of elements in a set; prints "3"
+animals.add('cat')        # Adding an element that is already in the set does nothing
+print(len(animals))       # Prints "3"
+animals.remove('cat')     # Remove an element from a set
+print(len(animals))       # Prints "2"
+```
+
+和前面一样，要知道关于集合的每个细节，查看[文档](https://docs.python.org/3.5/library/stdtypes.html#set)。
+
+
+**循环Loops** ：在集合中循环的语法和在列表中一样，但是集合是无序的，所以你在访问集合的元素的时候，不能做关于顺序的假设。
+```python
+animals = {'cat', 'dog', 'fish'}
+for idx, animal in enumerate(animals):
+    print('#%d: %s' % (idx + 1, animal))
+# Prints "#1: fish", "#2: dog", "#3: cat"
+```
+**集合综合式(Dictionary comprehensions)** ：和**字典综合式(Dictionary comprehensions)** 一样，可以轻松地构建集合：
+
+```python
+from math import sqrt
+nums = {int(sqrt(x)) for x in range(30)}
+print(nums)  # Prints "{0, 1, 2, 3, 4, 5}"
+```
