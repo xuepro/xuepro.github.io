@@ -12,8 +12,9 @@ multilingual: true
 tags:
     - Python 
     
----    
-     
+---    
+## Python Numpy 教程(Python Numpy Tutorial)
+
 这篇教程来自[Justin Johnson](https://cs.stanford.edu/people/jcjohns/)。
 
 
@@ -28,6 +29,11 @@ tags:
 内容列表：
  * Python
     * 基本数据类型
+    * 容器
+       * 列表
+       * 字典
+       * 集合
+       * 元组
  * Numpy
  * SciPy
  * Matplotlib
