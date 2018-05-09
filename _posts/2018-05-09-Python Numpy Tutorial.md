@@ -654,6 +654,32 @@ print(v.T)  # Prints "[1 2 3]"
 
 Numpy还提供了更多操作数组的函数，完整列表可以查看[文档](http://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html)。
 
+## 广播Broadcasting
+
+广播是一个强有力的机制，使得numpy可以对不同形状的数组进行算术运算。我们常常会有一个小的矩阵和一个大的矩阵，我们经常用小的矩阵对大的矩阵做一些操作。
+
+例如，我们想要把一个常向量加到矩阵的每一行，我们可以这样做：
+```python
+import numpy as np
+
+# We will add the vector v to each row of the matrix x,
+# storing the result in the matrix y
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+y = np.empty_like(x)   # Create an empty matrix with the same shape as x
+
+# Add the vector v to each row of the matrix x with an explicit loop
+for i in range(4):
+    y[i, :] = x[i, :] + v
+
+# Now y is the following
+# [[ 2  2  4]
+#  [ 5  5  7]
+#  [ 8  8 10]
+#  [11 11 13]]
+print(y)
+```
+
 
 
 [原文](https://cs231n.github.io/python-numpy-tutorial/)
