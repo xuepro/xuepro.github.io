@@ -600,7 +600,7 @@ print(np.divide(x, y))
 #  [ 1.73205081  2.        ]]
 print(np.sqrt(x))
 ```
-和MATLAB不同，```*```是元素逐个相乘，而不是矩阵乘法。我们用dot来进行向量的内积、矩阵乘以向量和矩阵乘法。dot既可以是numpy module（模块）的函数也可以是fsdfs
+和MATLAB不同，```*```是元素逐个相乘，而不是矩阵乘法。我们用dot来进行向量的内积、矩阵乘以向量和矩阵乘法。dot既可以是numpy module（模块）的函数也可以是数组对象的实例方法
 ```python
 import numpy as np
 
@@ -624,6 +624,37 @@ print(np.dot(x, v))
 print(x.dot(y))
 print(np.dot(x, y))
 ```
+Numpy提供了很多有用的函数对数组进行计算，其中最常用的一个是sum：
+```python
+import numpy as np
+
+x = np.array([[1,2],[3,4]])
+
+print(np.sum(x))  # Compute sum of all elements; prints "10"
+print(np.sum(x, axis=0))  # Compute sum of each column; prints "[4 6]"
+print(np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
+```
+你可以在[文档](http://docs.scipy.org/doc/numpy/reference/routines.math.html)里找到numpy提供的数学函数的完整列表。
+
+除了使用数组进行数学计算的函数，我们经常需要reshape数组（改变数组形状）或操纵数组的元素，其中最简单的例子就是对矩阵的转置操作，为了转置矩阵，只要使用数组对象的T属性。
+```python
+import numpy as np
+
+x = np.array([[1,2], [3,4]])
+print(x)    # Prints "[[1 2]
+            #          [3 4]]"
+print(x.T)  # Prints "[[1 3]
+            #          [2 4]]"
+
+# Note that taking the transpose of a rank 1 array does nothing:
+v = np.array([1,2,3])
+print(v)    # Prints "[1 2 3]"
+print(v.T)  # Prints "[1 2 3]"
+```
+
+Numpy还提供了更多操作数组的函数，完整列表可以查看[文档](http://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html)。
+
+
 
 [原文](https://cs231n.github.io/python-numpy-tutorial/)
 [参考](https://zhuanlan.zhihu.com/p/20878530)
