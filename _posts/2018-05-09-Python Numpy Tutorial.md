@@ -10,7 +10,6 @@ catalog:      true
 multilingual: true
 tags:
     - Python   
-    
 ---    
 
 ## Python Numpy 教程(Python Numpy Tutorial)
