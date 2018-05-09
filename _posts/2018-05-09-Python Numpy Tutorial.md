@@ -16,7 +16,7 @@ tags:
 
 ## Python Numpy 教程(Python Numpy Tutorial)
 
-这篇教程来自[Justin Johnson](https://cs.stanford.edu/people/jcjohns/)。
+这篇[教程](https://cs231n.github.io/python-numpy-tutorial/)来自[Justin Johnson](https://cs.stanford.edu/people/jcjohns/)。
 
 
 我们将使用Python编程语言来完成本课程的所有作业。Python是一门非常好的通用编程语言，凭借一些流行的库（numpy, scipy, matplotlib），成为了一个强大的科学计算环境。
@@ -953,5 +953,3 @@ plt.show()
 
 ![](https://cs231n.github.io/assets/cat_tinted_imshow.png)
 
-[原文](https://cs231n.github.io/python-numpy-tutorial/)
-[参考](https://zhuanlan.zhihu.com/p/20878530)
