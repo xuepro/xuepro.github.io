@@ -773,7 +773,53 @@ print(x + np.reshape(w, (2, 1)))
 #  [ 8 10 12]]
 print(x * 2)
 ```
+广播机制能够让你的代码更简洁更迅速，你应该尽可能使用它！
 
+## Numpy 文档（Documentation）
+
+简单的概述涉触及了你需要了解的numpy中的一些重要内容，但远不止如此。可以查阅numpy参考手册[numpy reference](http://docs.scipy.org/doc/numpy/reference/)查询更多信息。
+
+## SciPy
+Numpy提供了高性能的多维数组，以及计算和操作数组的基本工具。在此基础上SciPy提供了大量的操作numpy数组的函数，在不同类型的科学和工程计算中非常有用。
+
+熟悉SciPy的最好方法就是浏览[文档](http://docs.scipy.org/doc/scipy/reference/index.html)。我们会突出对本课程有用的部分。
+
+## 图像操作Image operations
+SciPy提供了一些操作图像的基本函数。比如，它提供了将图像从硬盘读入到数组的函数，也提供了将数组中数据写入硬盘成为图像的函数。这是一个说明这些函数的简单例子：
+```python
+from scipy.misc import imread, imsave, imresize
+
+# Read an JPEG image into a numpy array
+img = imread('assets/cat.jpg')
+print(img.dtype, img.shape)  # Prints "uint8 (400, 248, 3)"
+
+# We can tint the image by scaling each of the color channels
+# by a different scalar constant. The image has shape (400, 248, 3);
+# we multiply it by the array [1, 0.95, 0.9] of shape (3,);
+# numpy broadcasting means that this leaves the red channel unchanged,
+# and multiplies the green and blue channels by 0.95 and 0.9
+# respectively.
+img_tinted = img * [1, 0.95, 0.9]
+
+# Resize the tinted image to be 300 by 300 pixels.
+img_tinted = imresize(img_tinted, (300, 300))
+
+# Write the tinted image back to disk
+imsave('assets/cat_tinted.jpg', img_tinted)
+```
+![](https://cs231n.github.io/assets/cat.jpg)
+
+左边是原始图片，右边是变色和改变大小的图片。
+
+
+### MATLAB文件
+
+函数scipy.io.loadmat和scipy.io.savemat允许你读和写MATLAB文件。具体请查看文档。
+
+点之间的距离
+SciPy定义了一些有用的函数，可以计算集合中点之间的距离。
+
+函数scipy.spatial.distance.pdist能够计算集合中所有两点之间的距离：
 
 [原文](https://cs231n.github.io/python-numpy-tutorial/)
 [参考](https://zhuanlan.zhihu.com/p/20878530)
