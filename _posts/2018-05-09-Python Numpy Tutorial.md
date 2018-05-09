@@ -9,9 +9,10 @@ header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - Python 
+    - Python   
     
 ---    
+
 ## Python Numpy 教程(Python Numpy Tutorial)
 
 这篇教程来自[Justin Johnson](https://cs.stanford.edu/people/jcjohns/)。
