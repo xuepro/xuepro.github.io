@@ -624,3 +624,6 @@ print(np.dot(x, v))
 print(x.dot(y))
 print(np.dot(x, y))
 ```
+
+[原文](https://cs231n.github.io/python-numpy-tutorial/)
+[参考](https://zhuanlan.zhihu.com/p/20878530)
