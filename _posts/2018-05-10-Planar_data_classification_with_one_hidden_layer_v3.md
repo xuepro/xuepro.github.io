@@ -394,7 +394,7 @@ print("b2 = " + str(parameters["b2"]))
 - You can use the function `np.tanh()`. It is part of the numpy library.
 - The steps you have to implement are:
     1. Retrieve each parameter from the dictionary "parameters" (which is the output of `initialize_parameters()`) by using `parameters[".."]`.
-    2. Implement Forward Propagation. Compute $Z^{[1]}, A^{[1]}, Z^{[2]}$ and $A^{[2]}$ (the vector of all your predictions on all the examples in the training set).
+    2. Implement Forward Propagation. Compute $$Z^{[1]}, A^{[1]}, Z^{[2]}$$ and $$A^{[2]}$$ (the vector of all your predictions on all the examples in the training set).
 - Values needed in the backpropagation are stored in "`cache`". The `cache` will be given as an input to the backpropagation function.
 
 
@@ -465,7 +465,7 @@ $$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large{(} \small y^{(i)}\log\left(a^
 
 **Instructions**:
 - There are many ways to implement the cross-entropy loss. To help you, we give you how we would have implemented
-$- \sum\limits_{i=0}^{m}  y^{(i)}\log(a^{[2](i)})$:
+$$- \sum\limits_{i=0}^{m}  y^{(i)}\log(a^{[2](i)})$$:
 ```python
 logprobs = np.multiply(np.log(A2),Y)
 cost = - np.sum(logprobs)                # no need to use a for loop!
