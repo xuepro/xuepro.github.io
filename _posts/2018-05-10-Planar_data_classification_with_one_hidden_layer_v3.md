@@ -557,8 +557,8 @@ $\frac{\partial \mathcal{J} _i }{ \partial b_1 } = \sum_i{\frac{\partial \mathca
 !-->
 
 - Tips:
-    - To compute dZ1 you'll need to compute $g^{[1]'}(Z^{[1]})$. Since $g^{[1]}(.)$ is the tanh activation function, if $a = g^{[1]}(z)$ then $g^{[1]'}(z) = 1-a^2$. So you can compute 
-    $g^{[1]'}(Z^{[1]})$ using `(1 - np.power(A1, 2))`.
+    - To compute dZ1 you'll need to compute $$g^{[1]'}(Z^{[1]})$$. Since $$g^{[1]}(.)$$ is the tanh activation function, if $$a = g^{[1]}(z)$$ then $$g^{[1]'}(z) = 1-a^2$$. So you can compute 
+    $$g^{[1]'}(Z^{[1]})$$ using `(1 - np.power(A1, 2))`.
 
 
 ```python
