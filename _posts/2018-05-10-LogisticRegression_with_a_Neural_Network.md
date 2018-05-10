@@ -1,3 +1,17 @@
+---
+layout:       post
+title:        "Logistic Regression with a Neural Network mindset"
+subtitle:     "Logistic Regression with a Neural Network mindset"
+date:         2018-05-10 19:00:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+    
+---    
 
 # Logistic Regression with a Neural Network mindset
 
