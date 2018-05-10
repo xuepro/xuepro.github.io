@@ -186,9 +186,9 @@ You will build a Logistic Regression, using a Neural Network mindset. The follow
 
 ![](https://img-blog.csdn.net/20171117205123255?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTMyNDQ1NA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-For one example
+For one example $$x^{(i)}$$:
 
- $$x^{(i)}$$: $$z^{(i)} = w^T x^{(i)} + b \tag{1}$$
+$$z^{(i)} = w^T x^{(i)} + b \tag{1}$$
  
  $$\hat{y}^{(i)} = a^{(i)} = sigmoid(z^{(i)})\tag{2}$$
  
