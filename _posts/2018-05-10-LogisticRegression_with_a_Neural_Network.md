@@ -186,9 +186,17 @@ You will build a Logistic Regression, using a Neural Network mindset. The follow
 
 ![](https://img-blog.csdn.net/20171117205123255?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTMyNDQ1NA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-For one example $x^{(i)}$: $$z^{(i)} = w^T x^{(i)} + b \tag{1}$$$$\hat{y}^{(i)} = a^{(i)} = sigmoid(z^{(i)})\tag{2}$$$$ \mathcal{L}(a^{(i)}, y^{(i)}) =  - y^{(i)}  \log(a^{(i)}) - (1-y^{(i)} )  \log(1-a^{(i)})\tag{3}$$
+For one example
 
-The cost is then computed by summing over all training examples: $$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{6}$$
+ $$x^{(i)}$$: $$z^{(i)} = w^T x^{(i)} + b \tag{1}$$
+ 
+ $$\hat{y}^{(i)} = a^{(i)} = sigmoid(z^{(i)})\tag{2}$$
+ 
+ $$ \mathcal{L}(a^{(i)}, y^{(i)}) =  - y^{(i)}  \log(a^{(i)}) - (1-y^{(i)} )  \log(1-a^{(i)})\tag{3}$$
+
+The cost is then computed by summing over all training examples:
+
+ $$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{6}$$
 
 
 - Initialize the parameters of the model
@@ -284,8 +292,8 @@ print ("b = " + str(b))
 #### Forward Propagation:
 
 * You get X
-* You compute $A = \sigma(w^T X + b) = (a^{(0)}, a^{(1)}, ..., a^{(m-1)}, a^{(m)})$
-* You calculate the cost function: $J = -\frac{1}{m}\sum_{i=1}^{m}y^{(i)}\log(a^{(i)})+(1-y^{(i)})\log(1-a^{(i)})$
+* You compute $$A = \sigma(w^T X + b) = (a^{(0)}, a^{(1)}, ..., a^{(m-1)}, a^{(m)})$$
+* You calculate the cost function: $$J = -\frac{1}{m}\sum_{i=1}^{m}y^{(i)}\log(a^{(i)})+(1-y^{(i)})\log(1-a^{(i)})$$
 
 Here are the two formulas you will be using:
 
