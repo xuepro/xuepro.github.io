@@ -76,7 +76,7 @@ plt.scatter(X[0, :], X[1, :], c=Y.ravel().tolist(), s=40, cmap=plt.cm.Spectral);
 ```
 
 
-![png](Planar_data_classification_with_one_hidden_layer_v3_files/Planar_data_classification_with_one_hidden_layer_v3_6_0.png)
+![png](https://wx1.sinaimg.cn/mw690/006Lkwkygy1fr6ntgd743j30ae070wf8.jpg)
 
 
 You have:
@@ -161,7 +161,7 @@ print ('Accuracy of logistic regression: %d ' % float((np.dot(Y,LR_predictions) 
     
 
 
-![png](Planar_data_classification_with_one_hidden_layer_v3_files/Planar_data_classification_with_one_hidden_layer_v3_13_1.png)
+![png](https://wx2.sinaimg.cn/mw690/006Lkwkygy1fr6ntgdeyoj30as07q3z3.jpg)
 
 
 **Expected Output**:
@@ -995,7 +995,7 @@ plt.title("Decision Boundary for hidden layer size " + str(4))
 
 
 
-![png](Planar_data_classification_with_one_hidden_layer_v3_files/Planar_data_classification_with_one_hidden_layer_v3_50_2.png)
+![png](https://wx1.sinaimg.cn/mw690/006Lkwkygy1fr6ntgftwgj30as07qq3i.jpg)
 
 
 **Expected Output**:
@@ -1062,7 +1062,7 @@ for i, n_h in enumerate(hidden_layer_sizes):
     
 
 
-![png](Planar_data_classification_with_one_hidden_layer_v3_files/Planar_data_classification_with_one_hidden_layer_v3_56_1.png)
+![png](https://wx1.sinaimg.cn/mw690/006Lkwkygy1fr6ntgjiq0j30qa141q97.jpg)
 
 
 **Interpretation**:
@@ -1118,7 +1118,7 @@ plt.scatter(X[0, :], X[1, :], c=Y.ravel().tolist(), s=40, cmap=plt.cm.Spectral);
 ```
 
 
-![png](Planar_data_classification_with_one_hidden_layer_v3_files/Planar_data_classification_with_one_hidden_layer_v3_63_0.png)
+![png](https://wx1.sinaimg.cn/mw690/006Lkwkygy1fr6ntgfwl5j30an0700tc.jpg)
 
 
 Congrats on finishing this Programming Assignment!
