@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "Stanford 231课程：Python Numpy Tutorial教程"
-subtitle:     "cs231 course：Python Numpy Tutorial"
+title:        "Planar data classification with one hidden layer"
+subtitle:     "Planar data classification with one hidden layer"
 date:         2018-05-10 23:22:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
