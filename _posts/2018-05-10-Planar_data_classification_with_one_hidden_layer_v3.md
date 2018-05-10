@@ -1079,7 +1079,6 @@ Some optional/ungraded questions that you can explore if you wish:
 - Play with the learning_rate. What happens?
 - What if we change the dataset? (See part 5 below!)
 
-<font color='blue'>
 **You've learnt to:**
 - Build a complete neural network with a hidden layer
 - Make a good use of a non-linear unit
