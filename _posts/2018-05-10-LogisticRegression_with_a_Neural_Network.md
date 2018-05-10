@@ -449,7 +449,7 @@ print ("db = " + str(grads["db"]))
 
 **Exercise**: The previous function will output the learned w and b. We are able to use w and b to predict the labels for a dataset X. Implement the predict() function. There is two steps to computing predictions:
 
-Calculate $\hat{Y} = A = \sigma(w^T X + b)$
+Calculate $$\hat{Y} = A = \sigma(w^T X + b)$$
 
 Convert the entries of a into 0 (if activation <= 0.5) or 1 (if activation > 0.5), stores the predictions in a vector Y_prediction. If you wish, you can use an if/else statement in a for loop (though there is also a way to vectorize this).
 
