@@ -112,7 +112,7 @@ print ("y = " + str(train_set_y[:, index]) + ", it's a '" + classes[np.squeeze(t
     
 
 
-![png](LogisticRegression_with_a_Neural_Network_files/LogisticRegression_with_a_Neural_Network_6_1.png)
+![png](https://wx4.sinaimg.cn/thumb150/006Lkwkygy1fr6g8emdnmj3072070q34.jpg)
 
 
 
@@ -640,7 +640,7 @@ for index in range(20):
     
 
 
-![png](LogisticRegression_with_a_Neural_Network_files/LogisticRegression_with_a_Neural_Network_35_1.png)
+![png](https://wx2.sinaimg.cn/thumb150/006Lkwkygy1fr6g80wtyoj307207074i.jpg)
 
 
 Let's also plot the cost function and the gradients.
@@ -657,7 +657,7 @@ plt.show()
 ```
 
 
-![png](LogisticRegression_with_a_Neural_Network_files/LogisticRegression_with_a_Neural_Network_37_0.png)
+![png](https://wx3.sinaimg.cn/thumb150/006Lkwkygy1fr6g80x59gj30at07qdfv.jpg)
 
 
 **Interpretation**: You can see the cost decreasing. It shows that the parameters are being learned. However, you see that you could train the model even more on the training set. Try to increase the number of iterations in the cell above and rerun the cells. You might see that the training set accuracy goes up, but the test set accuracy goes down. This is called overfitting.
@@ -713,7 +713,7 @@ plt.show()
     
 
 
-![png](LogisticRegression_with_a_Neural_Network_files/LogisticRegression_with_a_Neural_Network_40_1.png)
+![png](https://wx2.sinaimg.cn/mw690/006Lkwkygy1fr6g80xv8fj30at07eaa8.jpg)
 
 
 
@@ -767,5 +767,5 @@ print("y = " + str(np.squeeze(my_predicted_image)) + ", your algorithm predicts 
     
 
 
-![png](LogisticRegression_with_a_Neural_Network_files/LogisticRegression_with_a_Neural_Network_42_2.png)
+![png](https://wx4.sinaimg.cn/mw690/006Lkwkygy1fr6g8101zbj30ah07078i.jpg)
 
