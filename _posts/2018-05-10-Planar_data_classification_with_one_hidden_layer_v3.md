@@ -1,3 +1,18 @@
+---
+layout:       post
+title:        "Stanford 231课程：Python Numpy Tutorial教程"
+subtitle:     "cs231 course：Python Numpy Tutorial"
+date:         2018-05-10 23:22:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+    
+---    
+     
 
 # Planar data classification with one hidden layer
 
