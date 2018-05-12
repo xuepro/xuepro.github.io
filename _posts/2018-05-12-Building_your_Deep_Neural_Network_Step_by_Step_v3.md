@@ -347,12 +347,12 @@ The linear forward module (vectorized over all the examples) computes the follow
 
 $$Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}\tag{4}$$
 
-where $A^{[0]} = X$. 
+where $$A^{[0]} = X$$. 
 
 **Exercise**: Build the linear part of forward propagation.
 
 **Reminder**:
-The mathematical representation of this unit is $Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}$. You may also find `np.dot()` useful. If your dimensions don't match, printing `W.shape` may help.
+The mathematical representation of this unit is $$Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}$$. You may also find `np.dot()` useful. If your dimensions don't match, printing `W.shape` may help.
 
 
 ```python
