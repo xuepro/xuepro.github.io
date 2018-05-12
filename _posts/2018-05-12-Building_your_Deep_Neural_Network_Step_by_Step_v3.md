@@ -898,16 +898,18 @@ print ("db = " + str(db))
 
 ### 6.3 - L-Model Backward 
 
-Now you will implement the backward function for the whole network. Recall that when you implemented the `L_model_forward` function, at each iteration, you stored a cache which contains (X,W,b, and z). In the back propagation module, you will use those variables to compute the gradients. Therefore, in the `L_model_backward` function, you will iterate through all the hidden layers backward, starting from layer $L$. On each step, you will use the cached values for layer $$l$$ to backpropagate through layer $l$. Figure 5 below shows the backward pass. 
+Now you will implement the backward function for the whole network. Recall that when you implemented the `L_model_forward` function, at each iteration, you stored a cache which contains (X,W,b, and z). In the back propagation module, you will use those variables to compute the gradients. Therefore, in the `L_model_backward` function, you will iterate through all the hidden layers backward, starting from layer $$L$$. On each step, you will use the cached values for layer $$l$$ to backpropagate through layer $$l$$. Figure 5 below shows the backward pass. 
 
 
 ![](https://wx1.sinaimg.cn/mw690/006Lkwkyly1fr8vep0vf3j30qa0egjx5.jpg)
  **Figure 5** : Backward pass 
 
-** Initializing backpropagation**:
+**Initializing backpropagation**:
+
 To backpropagate through this network, we know that the output is, 
-$A^{[L]} = \sigma(Z^{[L]})$. Your code thus needs to compute `dAL` $$= \frac{\partial \mathcal{L}}{\partial A^{[L]}}$$.
+$$A^{[L]} = \sigma(Z^{[L]})$$. Your code thus needs to compute `dAL` $$= \frac{\partial \mathcal{L}}{\partial A^{[L]}}$$.
 To do so, use this formula (derived using calculus which you don't need in-depth knowledge of):
+
 ```python
 dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL)) # derivative of cost with respect to AL
 ```
@@ -1035,7 +1037,7 @@ where $$\alpha$$ is the learning rate. After computing the updated parameters, s
 **Exercise**: Implement `update_parameters()` to update your parameters using gradient descent.
 
 **Instructions**:
-Update parameters using gradient descent on every $$W^{[l]}$ and $b^{[l]}$$ for $$l = 1, 2, ..., L$$. 
+Update parameters using gradient descent on every $$W^{[l]}$$ and $$b^{[l]}$$ for $$l = 1, 2, ..., L$$. 
 
 
 
