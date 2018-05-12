@@ -85,8 +85,8 @@ To build your neural network, you will be implementing several "helper functions
     - Stack [LINEAR->RELU] backward L-1 times and add [LINEAR->SIGMOID] backward in a new L_model_backward function
 - Finally update the parameters.
 
-<img src="images/final outline.png" style="width:800px;height:500px;">
-<caption><center> **Figure 1**</center></caption><br>
+![Figure 1](https://wx3.sinaimg.cn/mw690/006Lkwkyly1fr8vep83iaj31000qowto.jpg)
+**Figure 1**
 
 
 **Note** that for every forward function, there is a corresponding backward function. That is why at every step of your forward module you will be storing some values in a cache. The cached values are useful for computing gradients. In the backpropagation module you will then use the cache to calculate the gradients. This assignment will show you exactly how to carry out each of these steps. 
@@ -196,7 +196,7 @@ print("b2 = " + str(parameters["b2"]))
 The initialization for a deeper L-layer neural network is more complicated because there are many more weight matrices and bias vectors. When completing the `initialize_parameters_deep`, you should make sure that your dimensions match between each layer. Recall that $$n^{[l]}$$ is the number of units in layer $$l$$. Thus for example if the size of our input $$X$$ is $$(12288, 209)$$ (with $$m=209$$ examples) then:
 
 
-![table1]()
+![table1](https://wx2.sinaimg.cn/mw690/006Lkwkyly1fr8vg2oqyqj30tk07mq3v.jpg)
 
 Remember that when we compute $$W X + b$$ in python, it carries out broadcasting. For example, if: 
 
@@ -497,8 +497,8 @@ print("With ReLU: A = " + str(A))
 
 For even more convenience when implementing the $L$-layer Neural Net, you will need a function that replicates the previous one (`linear_activation_forward` with RELU) $L-1$ times, then follows that with one `linear_activation_forward` with SIGMOID.
 
-<img src="images/model_architecture_kiank.png" style="width:600px;height:300px;">
-<caption><center> **Figure 2** : *[LINEAR -> RELU] $\times$ (L-1) -> LINEAR -> SIGMOID* model</center></caption><br>
+![](https://wx1.sinaimg.cn/mw690/006Lkwkyly1fr8vepad4xj31500kkwim.jpg) 
+**Figure 2** : *[LINEAR -> RELU] $\times$ (L-1) -> LINEAR -> SIGMOID* model
 
 **Exercise**: Implement the forward propagation of the above model.
 
@@ -645,8 +645,9 @@ print("cost = " + str(compute_cost(AL, Y)))
 Just like with forward propagation, you will implement helper functions for backpropagation. Remember that back propagation is used to calculate the gradient of the loss function with respect to the parameters. 
 
 **Reminder**: 
-<img src="images/backprop_kiank.png" style="width:650px;height:250px;">
-<caption><center> **Figure 3** : Forward and Backward propagation for *LINEAR->RELU->LINEAR->SIGMOID* <br> *The purple blocks represent the forward propagation, and the red blocks represent the backward propagation.*  </center></caption>
+
+![](https://wx3.sinaimg.cn/mw690/006Lkwkyly1fr8veos9mlj30wi0bugo4.jpg)
+ **Figure 3** : Forward and Backward propagation for *LINEAR->RELU->LINEAR->SIGMOID* <br> *The purple blocks represent the forward propagation, and the red blocks represent the backward propagation.* 
 
 <!-- 
 For those of you who are expert in calculus (you don't need to be to do this assignment), the chain rule of calculus can be used to derive the derivative of the loss $\mathcal{L}$ with respect to $z^{[1]}$ in a 2-layer network as follows:
@@ -671,8 +672,9 @@ For layer $l$, the linear part is: $Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$ (foll
 
 Suppose you have already calculated the derivative $dZ^{[l]} = \frac{\partial \mathcal{L} }{\partial Z^{[l]}}$. You want to get $(dW^{[l]}, db^{[l]} dA^{[l-1]})$.
 
-<img src="images/linearback_kiank.png" style="width:250px;height:300px;">
-<caption><center> **Figure 4** </center></caption>
+
+![](https://wx3.sinaimg.cn/mw690/006Lkwkyly1fr8veolj0cj30fs0hggmv.jpg)
+**Figure 4** 
 
 The three outputs $(dW^{[l]}, db^{[l]}, dA^{[l]})$ are computed using the input $dZ^{[l]}$.Here are the formulas you need:
 $$ dW^{[l]} = \frac{\partial \mathcal{L} }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{8}$$
@@ -899,8 +901,8 @@ print ("db = " + str(db))
 Now you will implement the backward function for the whole network. Recall that when you implemented the `L_model_forward` function, at each iteration, you stored a cache which contains (X,W,b, and z). In the back propagation module, you will use those variables to compute the gradients. Therefore, in the `L_model_backward` function, you will iterate through all the hidden layers backward, starting from layer $L$. On each step, you will use the cached values for layer $l$ to backpropagate through layer $l$. Figure 5 below shows the backward pass. 
 
 
-<img src="images/mn_backward.png" style="width:450px;height:300px;">
-<caption><center>  **Figure 5** : Backward pass  </center></caption>
+![](https://wx1.sinaimg.cn/mw690/006Lkwkyly1fr8vep0vf3j30qa0egjx5.jpg)
+ **Figure 5** : Backward pass 
 
 ** Initializing backpropagation**:
 To backpropagate through this network, we know that the output is, 
