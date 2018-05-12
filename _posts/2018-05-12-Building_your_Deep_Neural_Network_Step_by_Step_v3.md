@@ -100,12 +100,14 @@ You will write two helper functions that will initialize the parameters for your
 **Exercise**: Create and initialize the parameters of the 2-layer neural network.
 
 **Instructions**:
+
 - The model's structure is: *LINEAR -> RELU -> LINEAR -> SIGMOID*. 
 - Use random initialization for the weight matrices. Use `np.random.randn(shape)*0.01` with the correct shape.
 - Use zero initialization for the biases. Use `np.zeros(shape)`.
 
 
 ```python
+
 # GRADED FUNCTION: initialize_parameters
 
 def initialize_parameters(n_x, n_h, n_y):
