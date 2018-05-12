@@ -341,7 +341,7 @@ Now that you have initialized your parameters, you will do the forward propagati
 
 - LINEAR
 - LINEAR -> ACTIVATION where ACTIVATION will be either ReLU or Sigmoid. 
-- [LINEAR -> RELU] $\times$ (L-1) -> LINEAR -> SIGMOID (whole model)
+- [LINEAR -> RELU] $$\times$$ (L-1) -> LINEAR -> SIGMOID (whole model)
 
 The linear forward module (vectorized over all the examples) computes the following equations:
 
@@ -408,19 +408,19 @@ print("Z = " + str(Z))
 
 In this notebook, you will use two activation functions:
 
-- **Sigmoid**: $\sigma(Z) = \sigma(W A + b) = \frac{1}{ 1 + e^{-(W A + b)}}$. We have provided you with the `sigmoid` function. This function returns **two** items: the activation value "`a`" and a "`cache`" that contains "`Z`" (it's what we will feed in to the corresponding backward function). To use it you could just call: 
+- **Sigmoid**: $$\sigma(Z) = \sigma(W A + b) = \frac{1}{ 1 + e^{-(W A + b)}}$$. We have provided you with the `sigmoid` function. This function returns **two** items: the activation value "`a`" and a "`cache`" that contains "`Z`" (it's what we will feed in to the corresponding backward function). To use it you could just call: 
 ``` python
 A, activation_cache = sigmoid(Z)
 ```
 
-- **ReLU**: The mathematical formula for ReLu is $A = RELU(Z) = max(0, Z)$. We have provided you with the `relu` function. This function returns **two** items: the activation value "`A`" and a "`cache`" that contains "`Z`" (it's what we will feed in to the corresponding backward function). To use it you could just call:
+- **ReLU**: The mathematical formula for ReLu is $$A = RELU(Z) = max(0, Z)$$. We have provided you with the `relu` function. This function returns **two** items: the activation value "`A`" and a "`cache`" that contains "`Z`" (it's what we will feed in to the corresponding backward function). To use it you could just call:
 ``` python
 A, activation_cache = relu(Z)
 ```
 
 For more convenience, you are going to group two functions (Linear and Activation) into one function (LINEAR->ACTIVATION). Hence, you will implement a function that does the LINEAR forward step followed by an ACTIVATION forward step.
 
-**Exercise**: Implement the forward propagation of the *LINEAR->ACTIVATION* layer. Mathematical relation is: $A^{[l]} = g(Z^{[l]}) = g(W^{[l]}A^{[l-1]} +b^{[l]})$ where the activation "g" can be sigmoid() or relu(). Use linear_forward() and the correct activation function.
+**Exercise**: Implement the forward propagation of the *LINEAR->ACTIVATION* layer. Mathematical relation is: $$A^{[l]} = g(Z^{[l]}) = g(W^{[l]}A^{[l-1]} +b^{[l]})$$ where the activation "g" can be sigmoid() or relu(). Use linear_forward() and the correct activation function.
 
 
 ```python
@@ -495,14 +495,14 @@ print("With ReLU: A = " + str(A))
 
 ### d) L-Layer Model 
 
-For even more convenience when implementing the $L$-layer Neural Net, you will need a function that replicates the previous one (`linear_activation_forward` with RELU) $L-1$ times, then follows that with one `linear_activation_forward` with SIGMOID.
+For even more convenience when implementing the $$L$$-layer Neural Net, you will need a function that replicates the previous one (`linear_activation_forward` with RELU) $$L-1$$ times, then follows that with one `linear_activation_forward` with SIGMOID.
 
 ![](https://wx1.sinaimg.cn/mw690/006Lkwkyly1fr8vepad4xj31500kkwim.jpg) 
-**Figure 2** : *[LINEAR -> RELU] $\times$ (L-1) -> LINEAR -> SIGMOID* model
+**Figure 2** : *[LINEAR -> RELU] $$\times$$ (L-1) -> LINEAR -> SIGMOID* model
 
 **Exercise**: Implement the forward propagation of the above model.
 
-**Instruction**: In the code below, the variable `AL` will denote $A^{[L]} = \sigma(Z^{[L]}) = \sigma(W^{[L]} A^{[L-1]} + b^{[L]})$. (This is sometimes also called `Yhat`, i.e., this is $\hat{Y}$.) 
+**Instruction**: In the code below, the variable `AL` will denote $$A^{[L]} = \sigma(Z^{[L]}) = \sigma(W^{[L]} A^{[L-1]} + b^{[L]})$$. (This is sometimes also called `Yhat`, i.e., this is $$\hat{Y}$$.) 
 
 **Tips**:
 - Use the functions you had previously written 
@@ -582,13 +582,13 @@ print("Length of caches list = " + str(len(caches)))
   </tr>
 </table>
 
-Great! Now you have a full forward propagation that takes the input X and outputs a row vector $A^{[L]}$ containing your predictions. It also records all intermediate values in "caches". Using $A^{[L]}$, you can compute the cost of your predictions.
+Great! Now you have a full forward propagation that takes the input X and outputs a row vector $$A^{[L]}$$ containing your predictions. It also records all intermediate values in "caches". Using $$A^{[L]}$$, you can compute the cost of your predictions.
 
 ## 5 - Cost function
 
 Now you will implement forward and backward propagation. You need to compute the cost, because you want to check if your model is actually learning.
 
-**Exercise**: Compute the cross-entropy cost $J$, using the following formula: $$-\frac{1}{m} \sum\limits_{i = 1}^{m} (y^{(i)}\log\left(a^{[L] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[L](i)}\right)) \tag{7}$$
+**Exercise**: Compute the cross-entropy cost $$J$$, using the following formula: $$-\frac{1}{m} \sum\limits_{i = 1}^{m} (y^{(i)}\log\left(a^{[L] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[L](i)}\right)) \tag{7}$$
 
 
 
@@ -654,9 +654,9 @@ For those of you who are expert in calculus (you don't need to be to do this ass
 
 $$\frac{d \mathcal{L}(a^{[2]},y)}{{dz^{[1]}}} = \frac{d\mathcal{L}(a^{[2]},y)}{{da^{[2]}}}\frac{{da^{[2]}}}{{dz^{[2]}}}\frac{{dz^{[2]}}}{{da^{[1]}}}\frac{{da^{[1]}}}{{dz^{[1]}}} \tag{8} $$
 
-In order to calculate the gradient $dW^{[1]} = \frac{\partial L}{\partial W^{[1]}}$, you use the previous chain rule and you do $dW^{[1]} = dz^{[1]} \times \frac{\partial z^{[1]} }{\partial W^{[1]}}$. During the backpropagation, at each step you multiply your current gradient by the gradient corresponding to the specific layer to get the gradient you wanted.
+In order to calculate the gradient $$dW^{[1]} = \frac{\partial L}{\partial W^{[1]}}$$, you use the previous chain rule and you do $$dW^{[1]} = dz^{[1]} \times \frac{\partial z^{[1]} }{\partial W^{[1]}}$$. During the backpropagation, at each step you multiply your current gradient by the gradient corresponding to the specific layer to get the gradient you wanted.
 
-Equivalently, in order to calculate the gradient $db^{[1]} = \frac{\partial L}{\partial b^{[1]}}$, you use the previous chain rule and you do $db^{[1]} = dz^{[1]} \times \frac{\partial z^{[1]} }{\partial b^{[1]}}$.
+Equivalently, in order to calculate the gradient $$db^{[1]} = \frac{\partial L}{\partial b^{[1]}}$$, you use the previous chain rule and you do $$db^{[1]} = dz^{[1]} \times \frac{\partial z^{[1]} }{\partial b^{[1]}}$$.
 
 This is why we talk about **backpropagation**.
 !-->
@@ -668,15 +668,15 @@ Now, similar to forward propagation, you are going to build the backward propaga
 
 ### 6.1 - Linear backward
 
-For layer $l$, the linear part is: $Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$ (followed by an activation).
+For layer $l$, the linear part is: $$Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$$ (followed by an activation).
 
-Suppose you have already calculated the derivative $dZ^{[l]} = \frac{\partial \mathcal{L} }{\partial Z^{[l]}}$. You want to get $(dW^{[l]}, db^{[l]} dA^{[l-1]})$.
+Suppose you have already calculated the derivative $$dZ^{[l]} = \frac{\partial \mathcal{L} }{\partial Z^{[l]}}$$. You want to get $$(dW^{[l]}, db^{[l]} dA^{[l-1]})$$.
 
 
 ![](https://wx3.sinaimg.cn/mw690/006Lkwkyly1fr8veolj0cj30fs0hggmv.jpg)
 **Figure 4** 
 
-The three outputs $(dW^{[l]}, db^{[l]}, dA^{[l]})$ are computed using the input $dZ^{[l]}$.Here are the formulas you need:
+The three outputs $$(dW^{[l]}, db^{[l]}, dA^{[l]})$$ are computed using the input $$dZ^{[l]}$$.Here are the formulas you need:
 $$ dW^{[l]} = \frac{\partial \mathcal{L} }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T} \tag{8}$$
 $$ db^{[l]} = \frac{\partial \mathcal{L} }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}\tag{9}$$
 $$ dA^{[l-1]} = \frac{\partial \mathcal{L} }{\partial A^{[l-1]}} = W^{[l] T} dZ^{[l]} \tag{10}$$
@@ -776,7 +776,7 @@ dZ = sigmoid_backward(dA, activation_cache)
 dZ = relu_backward(dA, activation_cache)
 ```
 
-If $g(.)$ is the activation function, 
+If $$g(.)$$ is the activation function, 
 `sigmoid_backward` and `relu_backward` compute $$dZ^{[l]} = dA^{[l]} * g'(Z^{[l]}) \tag{11}$$.  
 
 **Exercise**: Implement the backpropagation for the *LINEAR->ACTIVATION* layer.
@@ -898,7 +898,7 @@ print ("db = " + str(db))
 
 ### 6.3 - L-Model Backward 
 
-Now you will implement the backward function for the whole network. Recall that when you implemented the `L_model_forward` function, at each iteration, you stored a cache which contains (X,W,b, and z). In the back propagation module, you will use those variables to compute the gradients. Therefore, in the `L_model_backward` function, you will iterate through all the hidden layers backward, starting from layer $L$. On each step, you will use the cached values for layer $l$ to backpropagate through layer $l$. Figure 5 below shows the backward pass. 
+Now you will implement the backward function for the whole network. Recall that when you implemented the `L_model_forward` function, at each iteration, you stored a cache which contains (X,W,b, and z). In the back propagation module, you will use those variables to compute the gradients. Therefore, in the `L_model_backward` function, you will iterate through all the hidden layers backward, starting from layer $L$. On each step, you will use the cached values for layer $$l$$ to backpropagate through layer $l$. Figure 5 below shows the backward pass. 
 
 
 ![](https://wx1.sinaimg.cn/mw690/006Lkwkyly1fr8vep0vf3j30qa0egjx5.jpg)
@@ -906,7 +906,7 @@ Now you will implement the backward function for the whole network. Recall that 
 
 ** Initializing backpropagation**:
 To backpropagate through this network, we know that the output is, 
-$A^{[L]} = \sigma(Z^{[L]})$. Your code thus needs to compute `dAL` $= \frac{\partial \mathcal{L}}{\partial A^{[L]}}$.
+$A^{[L]} = \sigma(Z^{[L]})$. Your code thus needs to compute `dAL` $$= \frac{\partial \mathcal{L}}{\partial A^{[L]}}$$.
 To do so, use this formula (derived using calculus which you don't need in-depth knowledge of):
 ```python
 dAL = - (np.divide(Y, AL) - np.divide(1 - Y, 1 - AL)) # derivative of cost with respect to AL
@@ -916,9 +916,9 @@ You can then use this post-activation gradient `dAL` to keep going backward. As 
 
 $$grads["dW" + str(l)] = dW^{[l]}\tag{15} $$
 
-For example, for $l=3$ this would store $dW^{[l]}$ in `grads["dW3"]`.
+For example, for $$l=3$$ this would store $$dW^{[l]}$$ in `grads["dW3"]`.
 
-**Exercise**: Implement backpropagation for the *[LINEAR->RELU] $\times$ (L-1) -> LINEAR -> SIGMOID* model.
+**Exercise**: Implement backpropagation for the *[LINEAR->RELU] $$\times$$ (L-1) -> LINEAR -> SIGMOID* model.
 
 
 ```python
@@ -1030,12 +1030,12 @@ In this section you will update the parameters of the model, using gradient desc
 $$ W^{[l]} = W^{[l]} - \alpha \text{ } dW^{[l]} \tag{16}$$
 $$ b^{[l]} = b^{[l]} - \alpha \text{ } db^{[l]} \tag{17}$$
 
-where $\alpha$ is the learning rate. After computing the updated parameters, store them in the parameters dictionary. 
+where $$\alpha$$ is the learning rate. After computing the updated parameters, store them in the parameters dictionary. 
 
 **Exercise**: Implement `update_parameters()` to update your parameters using gradient descent.
 
 **Instructions**:
-Update parameters using gradient descent on every $W^{[l]}$ and $b^{[l]}$ for $l = 1, 2, ..., L$. 
+Update parameters using gradient descent on every $$W^{[l]}$ and $b^{[l]}$$ for $$l = 1, 2, ..., L$$. 
 
 
 
