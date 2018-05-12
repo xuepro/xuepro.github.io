@@ -232,9 +232,9 @@ $$ WX + b = \begin{bmatrix}
 
 - Use zeros initialization for the biases. Use `np.zeros(shape)`.
 
-- We will store $n^{[l]}$, the number of units in different layers, in a variable `layer_dims`. For example, the `layer_dims` for the "Planar Data classification model" from last week would have been [2,4,1]: There were two inputs, one hidden layer with 4 hidden units, and an output layer with 1 output unit. Thus means `W1`'s shape was (4,2), `b1` was (4,1), `W2` was (1,4) and `b2` was (1,1). Now you will generalize this to $L$ layers! 
+- We will store $$n^{[l]}$$, the number of units in different layers, in a variable `layer_dims`. For example, the `layer_dims` for the "Planar Data classification model" from last week would have been [2,4,1]: There were two inputs, one hidden layer with 4 hidden units, and an output layer with 1 output unit. Thus means `W1`'s shape was (4,2), `b1` was (4,1), `W2` was (1,4) and `b2` was (1,1). Now you will generalize this to $$L$$ layers! 
 
-- Here is the implementation for $L=1$ (one layer neural network). It should inspire you to implement the general case (L-layer neural network).
+- Here is the implementation for $$L=1$$ (one layer neural network). It should inspire you to implement the general case (L-layer neural network).
 
 ```python
     if L == 1:
