@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "Building"
-subtitle:     "Building"
+title:        "Building your Deep Neural Network: Step by Step"
+subtitle:     "Building your Deep Neural Network: Step by Step"
 date:         2018-05-12 20:59:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
