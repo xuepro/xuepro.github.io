@@ -811,9 +811,9 @@ imsave('assets/cat_tinted.jpg', img_tinted)
 ```
 
 | ![](https://cs231n.github.io/assets/cat.jpg)| ![](https://cs231n.github.io/assets/cat_tinted.jpg)   |
-| -----sssssssssssssssssssssssssssssssss---   | ---------------------------------------------------   | 
+| -----------------------------------------   | ---------------------------------------------------   | 
     
-  ![](https://cs231n.github.io/assets/cat_tinted.jpg)
+
 
 左边是原始图片，右边是变色和改变大小的图片。
 
