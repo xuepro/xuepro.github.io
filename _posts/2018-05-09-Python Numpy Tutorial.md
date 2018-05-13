@@ -810,8 +810,9 @@ img_tinted = imresize(img_tinted, (300, 300))
 imsave('assets/cat_tinted.jpg', img_tinted)
 ```
 
-| ![](https://cs231n.github.io/assets/cat.jpg)| ![](https://cs231n.github.io/assets/cat_tinted.jpg)   |
+|                                             |                                                       |
 | -----------------------------------------   | ---------------------------------------------------   | 
+|  ![](https://cs231n.github.io/assets/cat.jpg) | ![](https://cs231n.github.io/assets/cat_tinted.jpg) | 
     
 
 
