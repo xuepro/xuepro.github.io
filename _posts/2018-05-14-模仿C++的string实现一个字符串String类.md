@@ -75,8 +75,11 @@ int main(){
 
 ```cpp
 #include <iostream>
+
 //#include <string>
+
 //using std::string;
+
 #include "String.h"
 
 using std::endl;
@@ -128,9 +131,13 @@ int main(){
 
 ```cpp
 // String类的头文件，比如叫做"String.h"
+
 #pragma once
+
 #include <cstring>
+
 #include <iostream>
+
 class String
 {
 	char *data;
@@ -150,8 +157,11 @@ public:
 ```
 
 ```cpp
+
 // String类的源程序文件，比如叫做"String.cpp"
+
 #include "String.h"
+
 
 String::String(const char* s){
 	if(s==nullptr){	 data = nullptr;  size_ = 0;	return ;	}
