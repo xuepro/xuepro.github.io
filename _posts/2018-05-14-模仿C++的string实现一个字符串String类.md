@@ -1,3 +1,18 @@
+---
+layout:       post
+title:        "模仿C++的string实现一个字符串String类"
+subtitle:     "Implement a class String similar to c++ string"
+date:         2018-05-14 20:19:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+    
+---    
+
 # 模仿C++的string实现一个字符串String类
 
 ## 1. C++string 类的例子
