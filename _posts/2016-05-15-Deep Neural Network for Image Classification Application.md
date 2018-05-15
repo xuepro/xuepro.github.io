@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "Deep Neural Network for Image Classification: Application"
-subtitle:     "Deep Neural Network for Image Classification: Application"
+title:        "Deep Neural Network for Image Classification Application"
+subtitle:     "Deep Neural Network for Image Classification Application"
 date:         2018-05-15 12:31:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
