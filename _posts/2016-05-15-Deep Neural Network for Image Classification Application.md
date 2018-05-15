@@ -116,7 +116,7 @@ print ("y = " + str(train_y[0,index]) + ". It's a " + classes[train_y[0,index]].
     
 
 
-![png](DeepNeuralNetworkApplication_v3_files/DeepNeuralNetworkApplication_v3_8_1.png)
+![png](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frbx1o9rw1j3072070wen.jpg)
 
 
 
@@ -387,7 +387,7 @@ parameters = two_layer_model(train_x, train_y, layers_dims = (n_x, n_h, n_y), nu
     
 
 
-![png](DeepNeuralNetworkApplication_v3_files/DeepNeuralNetworkApplication_v3_19_1.png)
+![png](https://wx3.sinaimg.cn/mw690/006Lkwkygy1frbx1o9wokj309a07q0sr.jpg)
 
 
 **Expected Output**:
@@ -582,7 +582,7 @@ parameters = L_layer_model(train_x, train_y, layers_dims, num_iterations = 2500,
     
 
 
-![png](DeepNeuralNetworkApplication_v3_files/DeepNeuralNetworkApplication_v3_31_1.png)
+![png](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frbx1o9ruzj309a07q74b.jpg)
 
 
 **Expected Output**:
@@ -657,7 +657,7 @@ print_mislabeled_images(classes, test_x, test_y, pred_test)
 ```
 
 
-![png](DeepNeuralNetworkApplication_v3_files/DeepNeuralNetworkApplication_v3_39_0.png)
+![png](https://wx3.sinaimg.cn/mw690/006Lkwkygy1frbx1oddmvj31kw06bjuo.jpg)
 
 
 **A few type of images the model tends to do poorly on include:** 
@@ -707,7 +707,7 @@ print ("y = " + str(np.squeeze(my_predicted_image)) + ", your L-layer model pred
     
 
 
-![png](DeepNeuralNetworkApplication_v3_files/DeepNeuralNetworkApplication_v3_42_2.png)
+![png](https://wx3.sinaimg.cn/mw690/006Lkwkygy1frbx1onmraj31kw11z4qp.jpg)
 
 
 **References**:
