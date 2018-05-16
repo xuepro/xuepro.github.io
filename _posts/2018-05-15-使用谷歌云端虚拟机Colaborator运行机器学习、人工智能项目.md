@@ -1,3 +1,17 @@
+---
+layout:       post
+title:        "使用谷歌云端虚拟机Colaborator运行机器学习、人工智能项目"
+subtitle:     "using google Colaborator to programming for machine learning and deep leanring"
+date:         2018-05-16 16:47:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python 
+    
+---    
 
 
 使用谷歌云端虚拟机Colaborator运行机器学习、人工智能项目。步骤如下：
