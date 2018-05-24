@@ -19,6 +19,8 @@ This is a simple C++  implementation of Q Learning algorithm.
 
 For the example in the reference article.(以参考文献中的例子（如图）作为测试例子).
 
+"Suppose we have 5 rooms in a building connected by doors as shown in the figure below.  We'll number each room 0 through 4.  The outside of the building can be thought of as one big room (5).  Notice that doors 1 and 4 lead into the building from room 5 (outside)."
+
 ![](http://mnemstudio.org/ai/path/images/modeling_environment_clip_image002a.gif)
 ![](http://mnemstudio.org/ai/path/images/map1a.gif)
 
