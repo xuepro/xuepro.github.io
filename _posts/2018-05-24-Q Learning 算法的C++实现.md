@@ -323,6 +323,7 @@ private:
 int main() {   
 	Q_Learning<double> ql;
 	//ql.show_Q_table();
+	
 	ql.show_transitTable();
 	ql.do_learn();
    
