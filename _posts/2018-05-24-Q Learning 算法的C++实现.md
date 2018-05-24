@@ -307,3 +307,8 @@ int main() {
 结果截图：
 
 ![](.jpg)
+
+### 参考文件
+
+[A Painless Q-learning Tutorial （无痛Q Learning教程）](http://mnemstudio.org/path-finding-q-learning-tutorial.htm)
+
