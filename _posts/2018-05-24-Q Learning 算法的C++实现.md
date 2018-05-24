@@ -61,7 +61,7 @@ state action reward next_state
 5 5 100 5 
 ```
 
-###  Principle of Q Leaqrning algorithm 
+###  Principle of Q Learning algorithm 
 
 ![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9jpjd0oj30rt054q3g.jpg)
 
