@@ -49,7 +49,13 @@ state action reward next_state
 5 1 0 1
 5 5 100 5 
 ```
-Q Learning 的C++简单实现如下
+
+### 算法原理:
+
+![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9jpjd0oj30rt054q3g.jpg)
+
+### Q Learning 的C++简单实现如下
+
 ```cpp
 #include <vector>
 
@@ -312,10 +318,9 @@ int main() {
 
 }
 ```
-算法原理:
-![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9jpjd0oj30rt054q3g.jpg)
 
-结果截图：
+
+###　结果截图：
 
 ![](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frm9jpovpsj30k60ha0vg.jpg)
 
