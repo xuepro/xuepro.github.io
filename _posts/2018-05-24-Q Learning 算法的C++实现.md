@@ -158,7 +158,7 @@ read_state_transit_table(const char *file)
 
 template<typename T = double>
 class Q_Learning{
-#if 1
+
 	std::random_device rd;
 	std::mt19937 random_engine;
 
@@ -300,7 +300,7 @@ private:
 		int action  =  action_dist(random_engine);
 		return transitTable[state][action].action;
 	}
-#endif
+
 };
 
 
