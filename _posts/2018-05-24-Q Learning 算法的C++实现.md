@@ -303,10 +303,12 @@ int main() {
 
 }
 ```
+算法原理:
+![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9jpjd0oj30rt054q3g.jpg)
 
 结果截图：
 
-![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9frvpu8j30k60ha0vg.jpg)
+![](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frm9jpovpsj30k60ha0vg.jpg)
 
 ### 参考文件
 
