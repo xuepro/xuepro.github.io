@@ -15,11 +15,16 @@ tags:
 版权所有(hwdong)，未经作者同意，不得转载！
 
 
-以参考文献中的例子（如图）作为测试例子。
+This is a simple C++  implementation of Q Learning algorithm.
+
+For the example in the reference article.(以参考文献中的例子（如图）作为测试例子).
+
 ![](http://mnemstudio.org/ai/path/images/modeling_environment_clip_image002a.gif)
 ![](http://mnemstudio.org/ai/path/images/map1a.gif)
 
-可以将状态转移信息放在一个文件如sarn.txt中：
+I used a simple text file (called "sarn.txt" in the code) for store the transit information (可以将状态转移信息放在一个文件如sarn.txt中).
+
+you can make similar text file to store the transit information of your problem.
 
 ```
 dead goal states
@@ -50,11 +55,11 @@ state action reward next_state
 5 5 100 5 
 ```
 
-### 算法原理:
+###  Principle of Q Leaqrning algorithm 
 
 ![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9jpjd0oj30rt054q3g.jpg)
 
-### Q Learning 的C++简单实现如下
+###  The simple C++ implementation of Q Learning 
 
 ```cpp
 #include <vector>
@@ -320,11 +325,11 @@ int main() {
 ```
 
 
-###　结果截图：
+###　Result：
 
 ![](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frm9jpovpsj30k60ha0vg.jpg)
 
-### 参考文件
+### References
 
 [A Painless Q-learning Tutorial （无痛Q Learning教程）](http://mnemstudio.org/path-finding-q-learning-tutorial.htm)
 
