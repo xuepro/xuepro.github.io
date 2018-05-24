@@ -136,7 +136,7 @@ read_state_transit_table(const char *file)
            }
            else if(which==2){
                 line_stream>>state >> action >> reward>> next_state;
-            // Action_Reward_NextState<T> arn(action, next_state, reward);
+           
                 state_transit_pairs.push_back(
                     std::make_pair(state,
                            Action_Reward_NextState<T>(action, next_state, reward)));
@@ -205,20 +205,24 @@ public:
 	void do_learn(bool show = true) {
 		for (int i = 0; i < max_episode; ++i) {
 			// pick a random first state;
-			int state = pick_state();
-			//state = 5;
+			
+			int state = pick_state();			
 			do{
 				// choose an action
+				
 				int action;
 				double rand_d = rand_real();
 				if (rand_d < epsilon) { //random choose an action
+				
                                        action = random_action(state);
 				}
 				else { //choose max action
+				
 					action = max_action(state);
 				}
 
 				//update Q table;
+				
 				Action_Reward_NextState<T> action_reward_nextState =
 					get_action_reward_nestState(state,action);
 				int next_state = action_reward_nextState.nextState;
@@ -230,7 +234,8 @@ public:
 					(reward + gamma * (*max_qsa_it) - Q[state][action]);
 
                             if(show){
-                                cout<<"state:"<<state<<endl;                    show_Q_table();             
+                                cout<<"state:"<<state<<endl; 
+				show_Q_table();             
                              }
 		            state = next_state;
 
@@ -302,7 +307,8 @@ private:
             }
 	    }
 	    return action;
-		//return std::distance(Q[state].begin(), std::max_element(Q[state].begin(), Q[state].end()));
+	    //return std::distance(Q[state].begin(), std::max_element(Q[state].begin(), Q[state].end()));
+		
 	}
 	int random_action(int state) {
 		int size = transitTable[state].size();
@@ -317,7 +323,7 @@ private:
 int main() {
     try{
 	 Q_Learning<double> ql;
-	 ql.show_Q_table();
+	 //ql.show_Q_table();
 	 ql.show_transitTable();
 	 ql.do_learn();
     }
