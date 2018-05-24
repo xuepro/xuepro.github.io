@@ -306,7 +306,7 @@ int main() {
 
 结果截图：
 
-![](.jpg)
+![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frm9frvpu8j30k60ha0vg.jpg)
 
 ### 参考文件
 
