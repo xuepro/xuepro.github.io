@@ -27,7 +27,7 @@ For the example in the reference article..
 
 ### Transit Table
 
-I used a simple text file (called "sarn.txt" in the code) for store the transit information which tells us which action we can take and what reward we get and next state we can go uopn taking the action from the state.
+I used a simple text file (called "sarn.txt" in the code) to store state-transit information which tells us which action we can take and what reward we get and next state we can go uopn taking the action from the state.
 
 you can make similar text file to store the transit information of your problem.
 
