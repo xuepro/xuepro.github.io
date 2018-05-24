@@ -15,7 +15,12 @@ tags:
 版权所有(hwdong)，未经作者同意，不得转载！
 
 
-我将状态转移信息放在一个文件如sarn.txt中
+以参考文献中的例子（如图）作为测试例子。
+![](http://mnemstudio.org/ai/path/images/modeling_environment_clip_image002a.gif)
+![](http://mnemstudio.org/ai/path/images/map1a.gif)
+
+可以将状态转移信息放在一个文件如sarn.txt中：
+
 ```
 dead goal states
 5 1
