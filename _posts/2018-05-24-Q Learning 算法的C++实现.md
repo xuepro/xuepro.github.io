@@ -164,9 +164,6 @@ class Q_Learning{
 	double gamma = 0.8;
 	double epsilon = 0.5;
 
-	double rar; //random action rate
-	double radr; //random action decay rate
-
 	int max_episode = 500;
 
 public:
