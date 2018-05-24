@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "Q Learning 算法的C++实现"
-subtitle:     "a C++ implement of Q Learning algorithm"
+subtitle:     "a C++ implementation of Q Learning algorithm"
 date:         2018-05-24 11:12:00
 author:       "xuepro"
 header-img:   "img/home_bg.jpg"
