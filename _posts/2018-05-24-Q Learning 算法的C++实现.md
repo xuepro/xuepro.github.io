@@ -18,7 +18,7 @@ This is a simple C++  implementation of Q Learning algorithm.
 
 ### Example 
 
-For the example in the reference article.(以参考文献中的例子（如图）作为测试例子).
+For the example in the reference article..
 
 "Suppose we have 5 rooms in a building connected by doors as shown in the figure below.  We'll number each room 0 through 4.  The outside of the building can be thought of as one big room (5).  Notice that doors 1 and 4 lead into the building from room 5 (outside)."
 
@@ -27,8 +27,7 @@ For the example in the reference article.(以参考文献中的例子（如图�
 
 ### Transit Table
 
-I used a simple text file (called "sarn.txt" in the code) for store the transit information (可以将状态转移信息放在一个文件如sarn.txt中).
-which tells us which action we can take and what reward we get and next state we can go uopn taking the action from the state.
+I used a simple text file (called "sarn.txt" in the code) for store the transit information which tells us which action we can take and what reward we get and next state we can go uopn taking the action from the state.
 
 you can make similar text file to store the transit information of your problem.
 
