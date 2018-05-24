@@ -47,14 +47,23 @@ state action reward next_state
 Q Learning 的C++简单实现如下
 ```cpp
 #include <vector>
+
 #include <iostream>
+
 #include <fstream>
+
 #include <sstream>
+
 #include <algorithm>
+
 #include <tuple>
+
 #include <random>
+
 #include <cmath>
+
 #include <stdexcept>
+
 using namespace std;
 
 template<typename T>
@@ -185,7 +194,7 @@ public:
 				int action;
 				double rand_d = rand_real();
 				if (rand_d < epsilon) { //random choose an action
-                    action = random_action(state);
+                                       action = random_action(state);
 				}
 				else { //choose max action
 					action = max_action(state);
@@ -195,22 +204,20 @@ public:
 				Action_Reward_NextState<T> action_reward_nextState =
 					get_action_reward_nestState(state,action);
 				int next_state = action_reward_nextState.nextState;
-                T reward = action_reward_nextState.reward;
+                                T reward = action_reward_nextState.reward;
 
 				auto  max_qsa_it = std::max_element(std::begin(Q[next_state]),
                                         std::end(Q[next_state]));
 				Q[state][action] = Q[state][action] + alpha *
 					(reward + gamma * (*max_qsa_it) - Q[state][action]);
 
-                if(show){
-                    cout<<"state:"<<state<<endl;
-                    show_Q_table();
-               //     char ch;                   std::cin>>ch;
-                }
-				state = next_state;
+                            if(show){
+                                cout<<"state:"<<state<<endl;                    show_Q_table();             
+                             }
+		            state = next_state;
 
-			}while(!isEnd(state));
-		}
+	            }while(!isEnd(state));
+	       }
 	}
 
 	void show_Q_table(){
@@ -234,7 +241,7 @@ public:
 	    cout<<"state types:\n";
 	    for(auto &e: goal_dead_states)
             cout<<e<<endl;
-        cout<<endl;
+             cout<<endl;
 	}
 private:
 	bool isEnd(int state) {
