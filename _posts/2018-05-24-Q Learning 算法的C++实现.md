@@ -320,16 +320,12 @@ private:
 };
 
 
-int main() {
-    try{
-	 Q_Learning<double> ql;
-	 //ql.show_Q_table();
-	 ql.show_transitTable();
-	 ql.do_learn();
-    }
-    catch(std::exception const& e){
-        cout<<"can't find file!\n";
-    }
+int main() {   
+	Q_Learning<double> ql;
+	//ql.show_Q_table();
+	ql.show_transitTable();
+	ql.do_learn();
+   
 	return 0;
 
 }
