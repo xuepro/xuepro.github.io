@@ -102,5 +102,7 @@ examples of *$$\epsilon$$-soft* policies,
 ### Incremental Implementation
 
 ![](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frx058i4txj30oh0eadh7.jpg)
-### O-policy Monte Carlo Control
+
+### Off-policy Monte Carlo Control
+
 ![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frx058jt9vj30oh0exq4g.jpg)
