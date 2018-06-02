@@ -59,9 +59,20 @@ Generate an episode using $$\pi$$
 
 **end loop**
 
+![](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frx058hr1vj30of0awwfi.jpg)
+
 -----------------------------------------
 
-
-
-
 ### Monte Carlo Estimation of Action Values
+
+![](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frx058hhwij30of0d675w.jpg)
+
+### Monte Carlo Control without Exploring Starts
+
+![](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frx058kuk6j30oh0flabw.jpg)
+
+### Incremental Implementation
+
+![](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frx058i4txj30oh0eadh7.jpg)
+### O-policy Monte Carlo Control
+![](https://wx2.sinaimg.cn/mw690/006Lkwkygy1frx058jt9vj30oh0exq4g.jpg)
