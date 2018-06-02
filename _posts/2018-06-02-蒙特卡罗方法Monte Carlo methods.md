@@ -50,6 +50,7 @@ Generate an episode using $$\pi$$
   
   - $$V(s)\leftarrow $$   average(Returns(s))
   
+  
 **end for**
 
 **end loop**
