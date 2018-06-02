@@ -66,7 +66,7 @@ Generate an episode using $$\pi$$
 ### Monte Carlo Estimation of Action Values
 
 The only complication is that many state{action pairs may never be visited. If $$\pi$$ is
-a deterministic policy, then in following  one will observe returns only for one of the
+a deterministic policy, then in following $$\pi$$ one will observe returns only for one of the
 actions from each state. With no returns to average, the Monte Carlo estimates of the
 other actions will not improve with experience. 
 
