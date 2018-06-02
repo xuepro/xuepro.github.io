@@ -94,7 +94,7 @@ optimal policy.
 The on-policy method we present in this section uses *$$\epsilon$$-greedy* policies.
 
 That is, all nongreedy actions are given the minimal probability of selection, $$\frac{\epsilon}{\vert A(s)\vert}$$ and the remaining bulk of the probability,  $$1-\epsilon+ \frac{\epsilon}{\vert A(s)\vert}$$ .
-*$$\epsilon$$greedy* policies are
+*$$\epsilon$$-greedy* policies are
 examples of *$$\epsilon$$-soft* policies,
 
 ![](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frx058kuk6j30oh0flabw.jpg)
