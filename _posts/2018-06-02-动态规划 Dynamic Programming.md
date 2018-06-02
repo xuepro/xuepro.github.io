@@ -93,6 +93,7 @@ So $$\pi$$ is an optimal policy!
 
 $$\pi_0 \rightarrow V^{\pi_0} \rightarrow \pi_1 \rightarrow V^{\pi_1}\rightarrow \cdots\rightarrow \pi^* \rightarrow V^* \rightarrow \pi^*  $$
 
+![](http://oneraynyday.github.io/assets/generalizedpolicy.png)
 
 
 
