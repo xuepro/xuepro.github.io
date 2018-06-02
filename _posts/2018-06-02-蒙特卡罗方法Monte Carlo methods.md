@@ -38,6 +38,8 @@ $$\pi \leftarrow $$   policy to be evaluated
 $$V \leftarrow $$  an arbitrary state–value function
 Returns(s)  $$\leftarrow $$  an empty list, for all $$\forall s \in S$$
 
+----------------------------------------
+
 **loop**
 
 Generate an episode using $$\pi$$
@@ -54,6 +56,8 @@ Generate an episode using $$\pi$$
 **end for**
 
 **end loop**
+
+-----------------------------------------
 
 
 
