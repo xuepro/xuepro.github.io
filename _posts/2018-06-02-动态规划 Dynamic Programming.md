@@ -50,6 +50,7 @@ Using **synchronous** backups
 
 #### Policy Improvement Theorem
 Let $$\pi$$ and $$\pi^{\prime}$$  be any pair of deterministic policies such that
+
  $$ Q^{\pi}(s,\pi^{\prime}(s))  \geq V^\pi(s), \forall s\in S$$
  
  
