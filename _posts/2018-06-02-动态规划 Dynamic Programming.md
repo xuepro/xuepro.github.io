@@ -49,6 +49,12 @@ Using **synchronous** backups
 ### Policy Improvement
 
 #### Policy Improvement Theorem
+
+ For some state s we would like to know whether or not we should change the policy to deterministically choose an action $$a \neq \pi(s)$$,We know how good it is to follow the
+current policy from s—that is $$v_{\pi}(s)$$—but would it be better or worse to change to the
+new policy ? One way to answer this question is to consider selecting a in s and thereafter following the existing policy, π
+
+
 Let $$\pi$$ and $$\pi^{\prime}$$  be any pair of deterministic policies such that
 
  $$ Q^{\pi}(s,\pi^{\prime}(s))  \geq V^\pi(s), \forall s\in S$$
@@ -59,7 +65,14 @@ Then the policy $$\pi^{\prime}$$ must be as good as, or better than $$\pi$$
    $$V^{\pi^{\prime}} (s)) \geq V^\pi(s) $$
    
 **Proof**.
+$$\begin{equation}\begin{split}
 
+V^{\pi}(s) \leq Q^{\pi}(s,\pi\prime(s) )
+= E_{\pi\prime}[r_{t+1}+ \gamma V^{\pi}(s_{t+1}) \vert s_t=s]\\
+\leq E_{\pi\prime}[r_{t+1}+ \gamma Q^{\pi}(s_{t+1},\pi\prime_(s_{t+1) ) \vert s_t=s]\\
+\leq E_{\pi\prime}[r_{t+1}+ \gamma r_{t+2}+\gamma^2 Q^{\pi}(s_{t+2},\pi\prime_(s_{t+2) ) \vert s_t=s]\\
+\leqE_{\pi\prime}[r_{t+1}+ \gamma r_{t+2}+ \gamma^2 r_{t+3}+... \vert s_t=s] = V^{\pi\prime}(s)
+\end{split}\end{equation} $$
 
 
 ### Policy Iteration
