@@ -70,7 +70,7 @@ a deterministic policy, then in following $$\pi$$ one will observe returns only 
 actions from each state. With no returns to average, the Monte Carlo estimates of the
 other actions will not improve with experience. 
 
-One way to do this is by specifying that the episodes start in a state{action pair, and that every pair has a nonzero probability of
+One way to do this is by specifying that the episodes start in a state-action pair, and that every pair has a nonzero probability of
 being selected as the start. This guarantees that all state{action pairs will be visited an
 innite number of times in the limit of an innite number of episodes. We call this the
 assumption of **exploring starts**.
@@ -81,7 +81,7 @@ assumption of **exploring starts**.
 ### Monte Carlo Control without Exploring Starts
 
 How can we avoid the unlikely assumption of exploring starts? The only general way to
-ensure that all actions are selected innitely often is for the agent to continue to select
+ensure that all actions are selected infinitely often is for the agent to continue to select
 them. There are two approaches to ensuring this, resulting in what we call *on-policy*
 methods and *off-policy* methods. *On-policy* methods attempt to evaluate or improve the
 policy that is used to make decisions, whereas *off-policy* methods evaluate or improve
