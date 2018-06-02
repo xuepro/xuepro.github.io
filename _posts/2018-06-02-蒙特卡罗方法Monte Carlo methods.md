@@ -80,6 +80,23 @@ assumption of **exploring starts**.
 
 ### Monte Carlo Control without Exploring Starts
 
+How can we avoid the unlikely assumption of exploring starts? The only general way to
+ensure that all actions are selected innitely often is for the agent to continue to select
+them. There are two approaches to ensuring this, resulting in what we call *on-policy*
+methods and *off-policy* methods. *On-policy* methods attempt to evaluate or improve the
+policy that is used to make decisions, whereas *off-policy* methods evaluate or improve
+a policy dierent from that used to generate the data.
+
+In on-policy control methods the policy is generally soft, meaning that $$\pi(a\vert s)>0 $$
+for all $$s in S$$ and all $$a \in A(s)$$, but gradually shifted closer and closer to a deterministic
+optimal policy.
+
+The on-policy method we present in this section uses *$$\epsilon$$-greedy* policies.
+
+That is, all nongreedy actions are given the minimal probability of selection, $$\frac{\epsilon}{\vert A(s)\vert}$$ and the remaining bulk of the probability,  $$1-\epsilon+ \frac{\epsilon}{\vert A(s)\vert}$$ .
+*$$\epsilon$$greedy* policies are
+examples of *$$\epsilon$$-soft* policies,
+
 ![](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frx058kuk6j30oh0flabw.jpg)
 
 ### Incremental Implementation
