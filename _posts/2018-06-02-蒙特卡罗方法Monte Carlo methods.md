@@ -71,8 +71,8 @@ actions from each state. With no returns to average, the Monte Carlo estimates o
 other actions will not improve with experience. 
 
 One way to do this is by specifying that the episodes start in a state-action pair, and that every pair has a nonzero probability of
-being selected as the start. This guarantees that all state{action pairs will be visited an
-innite number of times in the limit of an innite number of episodes. We call this the
+being selected as the start. This guarantees that all state-action pairs will be visited an
+innite number of times in the limit of an infinite number of episodes. We call this the
 assumption of **exploring starts**.
 
 
