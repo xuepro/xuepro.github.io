@@ -52,8 +52,13 @@ Using **synchronous** backups
 
  For some state s we would like to know whether or not we should change the policy to deterministically choose an action $$a \neq \pi(s)$$,We know how good it is to follow the
 current policy from s—that is $$v_{\pi}(s)$$—but would it be better or worse to change to the
-new policy ? One way to answer this question is to consider selecting a in s and thereafter following the existing policy, π
+new policy ? One way to answer this question is to consider selecting a in s and thereafter following the existing policy, $$\pi$$
 
+
+$$\begin{equation}\begin{split}
+Q_{\pi}(s,a) = E[r_{t+1}+ \gamma V^{\pi}(s_{t+1}) \vert s_t=s, a]\\ 
+= \sum_{s^{\prime},r} p (s^{\prime},r\vert s,a)+ \[r+\gamma v_{\pi}(s^{\prime}) \]
+\end{split}\end{equation} $$
 
 Let $$\pi$$ and $$\pi^{\prime}$$  be any pair of deterministic policies such that
 
