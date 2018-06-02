@@ -70,7 +70,6 @@ $$\begin{equation}\begin{split}
 V^{\pi}(s) \leq Q^{\pi}(s,\pi^{\prime}(s) )
 = E_{\pi^{\prime}}[r_{t+1}+ \gamma V^{\pi}(s_{t+1}) \vert s_t=s]\\
 \leq E_{\pi^{\prime}}[r_{t+1}+ \gamma Q^{\pi}(s_{t+1},\pi^{\prime}(s_{t+1} ) \vert s_t=s]\\
-
 \leq E_{\pi^{\prime}}[r_{t+1}+ \gamma r_{t+2}+\gamma^2 Q^{\pi}( s_{t+2},\pi^{\prime}(s_{t+2} ) \vert s_t=s]\\
 \leq E_{\pi^{\prime}}[r_{t+1}+ \gamma r_{t+2}+ \gamma^2 r_{t+3}+\cdots \vert s_t=s] = V^{\pi^{\prime}}(s)
 \end{split}\end{equation} $$
