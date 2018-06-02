@@ -31,4 +31,20 @@ Thus, one of our primary goals for Monte Carlo methods is to estimate $$Q^*(s,a)
 
 ### Monte Carlo Prediction (Estimation of State Values)
 
+#### First–Visit Monte–Carlo Policy Evaluation
+  
+**Initialize:**
+$$\pi \leftarrow $$   policy to be evaluated
+$$V \leftarrow $$  an arbitrary state–value function
+Returns(s)  $$\leftarrow $$  an empty list, for all $$\forall s \in S$$
+
+**loop**
+Generate an episode using $$\pi$$
+**for** each state s in the episode **do**
+  $$R \leftarrow $$  return following the first occurrence of s
+  Append $$R$$ to Returns(s)
+  $$V(s)\leftarrow $$   average(Returns(s))
+**end for**
+**end loop**
+
 ### Monte Carlo Estimation of Action Values
