@@ -97,4 +97,17 @@ $$\pi_0 \rightarrow V^{\pi_0} \rightarrow \pi_1 \rightarrow V^{\pi_1}\rightarrow
 
 
 ### Value Iteration
+One drawback to policy iteration is that each of its iterations involves policy evaluation,
+which may itself be a protracted iterative computation requiring multiple sweeps through
+the state set.
 
+In fact, the policy evaluation step of policy iteration can be truncated in several ways
+without losing the convergence guarantees of policy iteration. One important special
+case is when policy evaluation is stopped after just one sweep (one update of each state).
+This algorithm is called value iteration. It can be written as a particularly simple update
+operation that combines the policy improvement and truncated policy evaluation steps:
+
+$$\begin{equation}\begin{split}
+V^{k+1}(s) = \max _{a\in A } E_{\pi}[r_{t+1}+ \gamma V_{k}(s_{t+1}) \vert s_t=s]\\
+= \max_{a\in A} \sum_{s^{\prime},r} p (s^{\prime},r\vert s,a) [r+\gamma v_{k}(s^{\prime}) ]
+\end{split}\end{equation} $$
