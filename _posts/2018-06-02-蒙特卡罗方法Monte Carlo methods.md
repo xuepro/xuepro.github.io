@@ -32,13 +32,15 @@ Thus, one of our primary goals for Monte Carlo methods is to estimate $$Q^*(s,a)
 ### Monte Carlo Prediction (Estimation of State Values)
 
 #### First–Visit Monte–Carlo Policy Evaluation
-  
-**Initialize:**
-$$\pi \leftarrow $$   policy to be evaluated
-$$V \leftarrow $$  an arbitrary state–value function
-Returns(s)  $$\leftarrow $$  an empty list, for all $$\forall s \in S$$
 
-----------------------------------------
+-----------------------------------------
+**Initialize:**
+
+$$\pi \leftarrow $$   policy to be evaluated
+
+$$V \leftarrow $$  an arbitrary state–value function
+
+Returns(s)  $$\leftarrow $$  an empty list, for all $$\forall s \in S$$
 
 **loop**
 
