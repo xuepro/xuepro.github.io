@@ -30,3 +30,5 @@ estimate the value of each action in order for the values to be useful in sugges
 Thus, one of our primary goals for Monte Carlo methods is to estimate $$Q^*(s,a)$$.
 
 ### Monte Carlo Prediction (Estimation of State Values)
+
+### Monte Carlo Estimation of Action Values
