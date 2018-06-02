@@ -65,6 +65,17 @@ Generate an episode using $$\pi$$
 
 ### Monte Carlo Estimation of Action Values
 
+The only complication is that many state{action pairs may never be visited. If $$\pi$$ is
+a deterministic policy, then in following  one will observe returns only for one of the
+actions from each state. With no returns to average, the Monte Carlo estimates of the
+other actions will not improve with experience. 
+
+One way to do this is by specifying that the episodes start in a state{action pair, and that every pair has a nonzero probability of
+being selected as the start. This guarantees that all state{action pairs will be visited an
+innite number of times in the limit of an innite number of episodes. We call this the
+assumption of **exploring starts**.
+
+
 ![](https://wx4.sinaimg.cn/mw690/006Lkwkygy1frx058hhwij30of0d675w.jpg)
 
 ### Monte Carlo Control without Exploring Starts
