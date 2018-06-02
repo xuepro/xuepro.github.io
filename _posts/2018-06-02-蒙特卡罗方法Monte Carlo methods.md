@@ -20,3 +20,7 @@ But it comes with many restrictions. For example, are there a lot of real world 
 
 Monte Carlo methods look at the problem in a completely novel way compared to dynamic programming. It asks the question: *How many samples do I need to take from our environment to discern a good policy from a bad policy?*
 
+With a model, state values alone are sufficient to determine a policy; one simply looks ahead one step and chooses whichever
+action leads to the best combination of reward and next state, as we did in the chapter on DP.
+
+$$ \pi(s) = \leftarrow arg\max_{a\in A} p(s^{\prime} ,r \vert s,a) [r+ \gamma V(s^{\prime} ) $$
