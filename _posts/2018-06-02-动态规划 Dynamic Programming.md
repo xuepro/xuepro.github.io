@@ -85,7 +85,9 @@ What if improvements stops ( $$V^{\pi^{\prime}} = V^{\pi} ) $$ ?
 
 $$ Q^{\pi}(s,\pi^{\prime}(s))  = \max_{a\in A} Q^{\pi}(s,a)  =  Q^{\pi}(s,\pi(s)) = V^{\pi}(s) $$
 
-But this is the Bellman optimality equation, Therefore $$ V^{\pi}(s) = V^{\pi^{\prime}}(s) = V^*(s)
+But this is the Bellman optimality equation, Therefore
+
+$$ V^{\pi}(s) = V^{\pi^{\prime}}(s) = V^*(s) $$
 
 So $$\pi$$ is an optimal policy!
 
