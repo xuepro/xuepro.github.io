@@ -56,7 +56,7 @@ Let $$\pi$$ and $$\pi^{\prime}$$  be any pair of deterministic policies such tha
  
 Then the policy $$\pi^{\prime}$$ must be as good as, or better than $$\pi$$
   
-   V^{\pi^{\prime}} (s)) \geq V^\pi(s)
+   $$V^{\pi^{\prime}} (s)) \geq V^\pi(s) $$
    
 **Proof**.
 
