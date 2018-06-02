@@ -72,7 +72,7 @@ other actions will not improve with experience.
 
 One way to do this is by specifying that the episodes start in a state-action pair, and that every pair has a nonzero probability of
 being selected as the start. This guarantees that all state-action pairs will be visited an
-innite number of times in the limit of an infinite number of episodes. We call this the
+infinite number of times in the limit of an infinite number of episodes. We call this the
 assumption of **exploring starts**.
 
 
@@ -85,7 +85,7 @@ ensure that all actions are selected infinitely often is for the agent to contin
 them. There are two approaches to ensuring this, resulting in what we call *on-policy*
 methods and *off-policy* methods. *On-policy* methods attempt to evaluate or improve the
 policy that is used to make decisions, whereas *off-policy* methods evaluate or improve
-a policy dierent from that used to generate the data.
+a policy diffierent from that used to generate the data.
 
 In on-policy control methods the policy is generally soft, meaning that $$\pi(a\vert s)>0 $$
 for all $$s in S$$ and all $$a \in A(s)$$, but gradually shifted closer and closer to a deterministic
