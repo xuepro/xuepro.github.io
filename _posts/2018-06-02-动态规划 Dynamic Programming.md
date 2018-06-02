@@ -46,6 +46,8 @@ Using **synchronous** backups
  - For all states $$s\in S$$
  - Update $$V^{k+1}(s)$$ from $$V^{k}(s^{\prime})$$
  
+ ![](https://wx3.sinaimg.cn/mw690/006Lkwkygy1frwqoi3h0xj30lg08xaat.jpg)
+ 
 ### Policy Improvement
 
 #### Policy Improvement Theorem
@@ -95,6 +97,8 @@ $$\pi_0 \rightarrow V^{\pi_0} \rightarrow \pi_1 \rightarrow V^{\pi_1}\rightarrow
 
 ![](http://oneraynyday.github.io/assets/generalizedpolicy.png)
 
+![](https://wx1.sinaimg.cn/mw690/006Lkwkygy1frwqojxhtzj30li0enta7.jpg)
+
 
 ### Value Iteration
 One drawback to policy iteration is that each of its iterations involves policy evaluation,
@@ -111,3 +115,7 @@ $$\begin{equation}\begin{split}
 V_{k+1}(s) = \max _{a\in A } E_{\pi}[r_{t+1}+ \gamma V_{k}(s_{t+1}) \vert s_t=s]\\
 = \max_{a\in A} \sum_{s^{\prime},r} p (s^{\prime},r\vert s,a) [r+\gamma v_{k}(s^{\prime}) ]
 \end{split}\end{equation} $$
+
+![](https://wx3.sinaimg.cn/mw690/006Lkwkygy1frwqon3o8hj30lg09yjsa.jpg)
+
+
