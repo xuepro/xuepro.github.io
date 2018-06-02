@@ -96,4 +96,5 @@ $$\pi_0 \rightarrow V^{\pi_0} \rightarrow \pi_1 \rightarrow V^{\pi_1}\rightarrow
 ![](http://oneraynyday.github.io/assets/generalizedpolicy.png)
 
 
+### Value Iteration
 
