@@ -41,9 +41,9 @@ Returns(s)  $$\leftarrow $$  an empty list, for all $$\forall s \in S$$
 **loop**
 Generate an episode using $$\pi$$
 **for** each state s in the episode **do**
-  $$R \leftarrow $$  return following the first occurrence of s
-  Append $$R$$ to Returns(s)
-  $$V(s)\leftarrow $$   average(Returns(s))
+  - $$R \leftarrow $$  return following the first occurrence of s
+  - Append $$R$$ to Returns(s)
+  - $$V(s)\leftarrow $$   average(Returns(s))
 **end for**
 **end loop**
 
