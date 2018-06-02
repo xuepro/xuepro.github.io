@@ -65,8 +65,8 @@ Then the policy $$\pi^{\prime}$$ must be as good as, or better than $$\pi$$
    $$V^{\pi^{\prime}} (s)) \geq V^\pi(s) $$
    
 **Proof**.
-$$\begin{equation}\begin{split}
 
+$$\begin{equation}\begin{split}
 V^{\pi}(s) \leq Q^{\pi}(s,\pi\prime(s) )
 = E_{\pi\prime}[r_{t+1}+ \gamma V^{\pi}(s_{t+1}) \vert s_t=s]\\
 \leq E_{\pi\prime}[r_{t+1}+ \gamma Q^{\pi}(s_{t+1},\pi\prime_(s_{t+1) ) \vert s_t=s]\\
