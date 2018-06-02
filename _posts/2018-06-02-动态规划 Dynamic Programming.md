@@ -37,7 +37,7 @@ $$V_0\rightarrow V_1\rightarrow V_2\rightarrow ...\rightarrow V_k\rightarrow ...
 
 **A full policy–evaluation backup:**
 
-$$V^{k+1}(s) =\sum_{a\in A} \pi (a\vert s)(R(s,a)+\gamma \sum_{s' \in S}P(s' \vert s,a) V^{k}(s'))$$
+$$V_{k+1}(s) =\sum_{a\in A} \pi (a\vert s)(R(s,a)+\gamma \sum_{s' \in S}P(s' \vert s,a) V_{k}(s'))$$
 
 
 A **sweep** consists of applying a backup operation to each state
@@ -108,6 +108,6 @@ This algorithm is called value iteration. It can be written as a particularly si
 operation that combines the policy improvement and truncated policy evaluation steps:
 
 $$\begin{equation}\begin{split}
-V^{k+1}(s) = \max _{a\in A } E_{\pi}[r_{t+1}+ \gamma V_{k}(s_{t+1}) \vert s_t=s]\\
+V_{k+1}(s) = \max _{a\in A } E_{\pi}[r_{t+1}+ \gamma V_{k}(s_{t+1}) \vert s_t=s]\\
 = \max_{a\in A} \sum_{s^{\prime},r} p (s^{\prime},r\vert s,a) [r+\gamma v_{k}(s^{\prime}) ]
 \end{split}\end{equation} $$
