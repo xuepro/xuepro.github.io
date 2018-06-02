@@ -57,7 +57,7 @@ new policy ? One way to answer this question is to consider selecting a in s and
 
 $$\begin{equation}\begin{split}
 Q_{\pi}(s,a) = E[r_{t+1}+ \gamma V^{\pi}(s_{t+1}) \vert s_t=s, a]\\ 
-= \sum_{s^{\prime},r} p (s^{\prime},r\vert s,a)+ \[r+\gamma v_{\pi}(s^{\prime}) \]
+= \sum_{s^{\prime},r} p (s^{\prime},r\vert s,a) [r+\gamma v_{\pi}(s^{\prime}) ]
 \end{split}\end{equation} $$
 
 Let $$\pi$$ and $$\pi^{\prime}$$  be any pair of deterministic policies such that
