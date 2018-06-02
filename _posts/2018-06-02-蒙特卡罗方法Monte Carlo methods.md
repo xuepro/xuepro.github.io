@@ -23,4 +23,10 @@ Monte Carlo methods look at the problem in a completely novel way compared to dy
 With a model, state values alone are sufficient to determine a policy; one simply looks ahead one step and chooses whichever
 action leads to the best combination of reward and next state, as we did in the chapter on DP.
 
-$$ \pi(s) = \leftarrow arg\max_{a\in A} p(s^{\prime} ,r \vert s,a) [r+ \gamma V(s^{\prime} ) $$
+$$ \pi(s) = \leftarrow arg\max_{a\in A} p(s^{\prime} ,r \vert s,a) [r+ \gamma V(s^{\prime} )] $$
+
+Without a model, however, state values alone are not sufficient. One must explicitly
+estimate the value of each action in order for the values to be useful in suggesting a policy.
+Thus, one of our primary goals for Monte Carlo methods is to estimate $$Q^*(s,a)$$.
+
+### Monte Carlo Prediction (Estimation of State Values)
