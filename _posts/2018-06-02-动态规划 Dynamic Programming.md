@@ -79,6 +79,16 @@ V^{\pi}(s) \leq Q^{\pi}(s,\pi^{\prime}(s) )
 \leq E_{\pi^{\prime}}[r_{t+1}+ \gamma r_{t+2}+ \gamma^2 r_{t+3}+\cdots \vert s_t=s] = V^{\pi^{\prime}}(s)
 \end{split}\end{equation} $$
 
+What if improvements stops ( $$V^{\pi^{\prime}} \eq V^{\pi} ) $$ ?
+
+$$ Q^{\pi}(s,\pi^{\prime}(s))  = \max_{a\in A} Q^{\pi}(s,a)  =  Q^{\pi}(s,\pi(s)) = V^{\pi}(s) $$
+
+But this is the Bellman optimality equation, Therefore $$ V^{\pi}(s) = V^{\pi^{\prime}}(s) = V^*(s)
+
+So $$\pi$$ is an optimal policy!
+
+$$\pi_0 \rightarrow V^{\pi_0} \rightarrow \pi_1 \rightarrow V^{\pi_1}\rightarrow \cdots\rightarrow \pi^* \rightarrow V^* \rightarrow \pi^*  $$
+
 
 ### Policy Iteration
 
