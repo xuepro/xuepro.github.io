@@ -81,7 +81,7 @@ V^{\pi}(s) \leq Q^{\pi}(s,\pi^{\prime}(s) )
 
 ### Policy Iteration
 
-What if improvements stops ( $$V^{\pi^{\prime}} \eq V^{\pi} ) $$ ?
+What if improvements stops ( $$V^{\pi^{\prime}} = V^{\pi} ) $$ ?
 
 $$ Q^{\pi}(s,\pi^{\prime}(s))  = \max_{a\in A} Q^{\pi}(s,a)  =  Q^{\pi}(s,\pi(s)) = V^{\pi}(s) $$
 
