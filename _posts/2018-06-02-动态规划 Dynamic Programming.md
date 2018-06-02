@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Dynamic Programming"
+title:        "动态规划Dynamic Programming"
 subtitle:     "Dynamic Programming"
 date:         2018-06-02 11:14:00
 author:       "xuepro"
