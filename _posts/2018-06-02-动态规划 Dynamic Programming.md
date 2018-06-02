@@ -33,7 +33,7 @@ $$V^{\pi} = (1- \gamma P^{\pi})^{-1} R^{\pi}$$
 
 Iterative application of Bellman expectation backup
 
-V_0\rightarrow V_1\rightarrow V_2\rightarrow ...\rightarrow V_k\rightarrow ...\rightarrow V^{pi}
+$$V_0\rightarrow V_1\rightarrow V_2\rightarrow ...\rightarrow V_k\rightarrow ...\rightarrow V^{pi}$$
 
 **A full policy–evaluation backup:**
 
@@ -44,6 +44,6 @@ A **sweep** consists of applying a backup operation to each state
 Using **synchronous** backups
  - At each iteration k + 1
  - For all states $$s\in S$$
- - Update $$V^{k+1}(s)$$ from $$V^{k}(s\prime)$$
+ - Update $$V^{k+1}(s)$$ from $$V^{k}(s^{\prime})$$
  
  
