@@ -191,7 +191,8 @@ TypeError: 'A' object is not an iterator
 - 生成器表达式
 - 生成器函数
 
-生成器表达式 类似于 列表表达式(综合式)，即将 列表表达式的```[]``换成了```()```。例如
+### 生成器表达式 
+    类似于 列表表达式(综合式)，即将 列表表达式的```[]``换成了```()```。例如
 ```python
 g = (i for i in range(5))   # 创建一个生成器
 print(g)
@@ -203,7 +204,29 @@ print(it)
 <generator object <genexpr> at 0x00000250BC1049E8>
 <generator object <genexpr> at 0x00000250BC1049E8>
 ```
+生成器也是一个可迭代对象,当然可以用for遍历它
+```python
+for i in g:     # 生成器也是一个可迭代对象
+   print (i)
+```
 
+### 生成器函数: 
+    包含yield关键字的函数.
+```python
+ # 生成器函数
+def gen(n):   
+    for i in range(n):
+        yield i
+        
+g = gen(5)        # 创建一个生成器
+print (g)           # <generator object gen at 0x10bb46f50>
+print ( type(g) )   # <type 'generator'>
+```
+输出
+```
+<generator object gen at 0x00000250BC104EB8>
+<class 'generator'>
+```
 
 ## 参考：
 
