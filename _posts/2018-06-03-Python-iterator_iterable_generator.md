@@ -219,13 +219,22 @@ def gen(n):
         yield i
         
 g = gen(5)        # 创建一个生成器
-print (g)           # <generator object gen at 0x10bb46f50>
+print (g)           
 print ( type(g) )   # <type 'generator'>
+
+# 迭代
+for i in g:
+    print (i)    
 ```
 输出
 ```
-<generator object gen at 0x00000250BC104EB8>
+<generator object gen at 0x00000250BC142728>
 <class 'generator'>
+0
+1
+2
+3
+4
 ```
 
 ## 参考：
