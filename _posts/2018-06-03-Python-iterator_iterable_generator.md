@@ -253,9 +253,51 @@ def gen_data(n):
 
 使用yield能够完美解决这类问题，因为yield是懒惰执行的，一次只会返回一个值：
 ```python
-for gen_data(n):
+def gen_data(n):
     for i in range(n):
-        yield i         # 每次只生成一个元素
+        yield i         # 每次只生成一个元素 
+```
+然后，这样使用它
+```python
+for e in gen_data(8):
+    print(e) 
+```
+输出为：
+```
+0
+1
+2
+3
+4
+5
+6
+```
+
+再如，我们可以写出斐波拉契数列的生成器函数
+```python
+def fib(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
+```
+然后这样使用
+```python
+for a in fib(8):
+    print(a) 
+```
+输出为
+```
+1
+1
+2
+3
+5
+8
+13
+21
 ```
 
 ## 参考：
