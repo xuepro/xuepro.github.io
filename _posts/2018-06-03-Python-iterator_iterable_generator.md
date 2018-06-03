@@ -17,6 +17,20 @@ tags:
 
 ![](http://kaito-blog.qiniudn.com/relationships.png?imageMogr2/thumbnail/!70p)
 
+- list、set、tuple、dict都是容器
+- 容器通常是一个可迭代对象
+- 但凡可以返回一个迭代器的对象，都称之为可迭代对象
+- 迭代器是一个可迭代对象，但反之不一定
+
+- 实现了迭代器协议方法的称作一个迭代器
+- 生成器是一种特殊的迭代器
+
+## 容器
+
+是存储多个值（对象）的数据类型，如list,tuple,set,dict等都是容器，容器是实现了**__contains__** 方法的类，从而可以用in或not in语法得知某个元素是否在容器内。
+
+
+
 
 参考：
 [Python技术进阶——迭代器、可迭代对象、生成器](http://kaito-kidd.com/2018/04/18/python-advance-iterator-generator/)
