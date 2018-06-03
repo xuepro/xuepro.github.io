@@ -13,6 +13,9 @@ tags:
     
 ---
 
+容器（container）、可迭代对象（iterable）、迭代器（iterator）、生成器（generator）的关系如下图：
+
+![](http://kaito-blog.qiniudn.com/relationships.png?imageMogr2/thumbnail/!70p)
 
 
 参考：
