@@ -115,10 +115,42 @@ class B(object):
 **迭代器** 类的 **__iter__**  方法都返回自身“return self”。即返回一个“ **可迭代的对象** ”
 
 既然**迭代器**类也包含了 **__iter__**,所以**迭代器**也是一个**可迭代的**，但**可迭代的**不一定是迭代器
- 
+
+例如下面的A是一个**可迭代的** 类，通过**__iter__** 返回了一个**迭代器对象** ”即B类的对象.
+
+```python
+class A(object):
+    """
+    A的实例不是迭代器，因为只A实现了__iter__
+    但这个类的实例是一个可迭代对象
+    因为__iter__返回了B的实例，也就是返回了一个迭代器，因为B实现了迭代器协议
+    返回一个迭代器的对象都被称为可迭代对象
+    """
+    def __init__(self, n):
+        self.n = n
+    def __iter__(self):
+        return B(self.n)
+```
+下面代码
+```python
+b = B(3)        # b是一个迭代器，同时b是一个可迭代对象
+for i in b:
+    print (i)
+    
+print (iter(b))  
+
+a = A(3)        # a不是迭代器，但a是可迭代对象，它把迭代细节交给了B，B的实例是迭代器
+for i in a:
+    print (i)
+print (iter(a) )  
+```
 
 
-参考：
+## 参考：
+
+
 [Python技术进阶——迭代器、可迭代对象、生成器](http://kaito-kidd.com/2018/04/18/python-advance-iterator-generator/)
 
 [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4) 
+
+[Python Iterator Tutorial](https://www.datacamp.com/community/tutorials/python-iterator-tutorial)
