@@ -29,6 +29,34 @@ tags:
 
 是存储多个值（对象）的数据类型，如list,tuple,set,dict等都是容器，容器是实现了**__contains__** 方法的类，从而可以用in或not in语法得知某个元素是否在容器内。
 
+```python
+print (1 in [1, 2, 3])             # True
+print (2 not in (1, 2, 3) )        # False
+print ('a' in ('a', 'b', 'c') )    # True
+print ('x' in 'xyz' )              # True
+print ('a' not in 'xyz')           # True
+```
+```
+True
+False
+True
+True
+True
+```
+可以如下顶一个一个容器（即实现**__contains__** 方法）:'
+```python
+class A(object):
+    def __init__(self):
+        self.items = [1, 2]
+    def __contains__(self, item):   # x in y
+        return item in self.items
+    
+    
+a = A()
+print (1 in a )   # True
+print (2 in a )  # True
+print (3 in a )   # False
+```
 
 
 
