@@ -213,9 +213,11 @@ for i in g:     # 生成器也是一个可迭代对象
 ```
 
 ### 生成器函数: 
-    包含yield关键字的函数.
+
+包含yield关键字的函数.
+
 ```python
- # 生成器函数
+# 生成器函数
 def gen(n):   
     for i in range(n):
         yield i
@@ -228,6 +230,7 @@ print ( type(g) )   # <type 'generator'>
 for i in g:
     print (i)    
 ```
+
 输出
 ```
 <generator object gen at 0x00000250BC142728>
@@ -245,23 +248,28 @@ for i in g:
 - 包含yield的方法一般用于迭代，每次执行遇到yield即返回yield后的结果，但内部会保留上次执行的状态，下次迭代继续执行yield之后的代码，直到再次遇到yield并返回
 
 当我们想得到一个很大的集合时，如果使用普通方法，一次性生成出这个集合，然后return返回：
+
 ```python
 def gen_data(n):
     return [i for i in range(n)]    # 一次性生成大集合
 ```
+
 但如果这个集合非常大时，就需要在内存中一次性占用非常大的内存。
 
 使用yield能够完美解决这类问题，因为yield是懒惰执行的，一次只会返回一个值：
+
 ```python
 def gen_data(n):
     for i in range(n):
         yield i         # 每次只生成一个元素 
 ```
 然后，这样使用它
+
 ```python
 for e in gen_data(8):
     print(e) 
 ```
+
 输出为：
 ```
 0
@@ -283,12 +291,16 @@ def fib(max):
         n = n + 1
     return 'done'
 ```
+
 然后这样使用
+
 ```python
 for a in fib(8):
     print(a) 
 ```
+
 输出为
+
 ```
 1
 1
