@@ -157,6 +157,30 @@ print (iter(a) )
 2
 <__main__.B object at 0x00000250BC099F98>
 ```
+上述的for循环中就是调用next函数得到迭代器对象（即将迭代器对象传给next函数）的下一个值的。
+
+可以调用next函数作用于一个迭代器对象，得到该迭代器对象中的下一数据元素的值，但不能将next函数作用于一个可迭代对象。
+
+
+
+```python
+b = B(5)
+a = A(5)
+print(next(b))
+print(next(a))
+```
+输出为
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-23-44d8a918ee80> in <module>()
+      2 a = A(5)
+      3 print(next(b))
+----> 4 print(next(a))
+
+TypeError: 'A' object is not an iterator
+```
+
 
 ## 参考：
 
