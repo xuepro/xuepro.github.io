@@ -13,6 +13,8 @@ tags:
     
 ---
 
+文章来源：[Python技术进阶——迭代器、可迭代对象、生成器](http://kaito-kidd.com/2018/04/18/python-advance-iterator-generator/)
+
 容器（container）、可迭代对象（iterable）、迭代器（iterator）、生成器（generator）的关系如下图：
 
 ![](http://kaito-blog.qiniudn.com/relationships.png?imageMogr2/thumbnail/!70p)
@@ -237,10 +239,29 @@ for i in g:
 4
 ```
 
+这个函数与包含return的函数执行机制不同：
+
+- 包含return的方法会以return关键字为终结返回，每次执行都返回相同的结果
+- 包含yield的方法一般用于迭代，每次执行遇到yield即返回yield后的结果，但内部会保留上次执行的状态，下次迭代继续执行yield之后的代码，直到再次遇到yield并返回
+
+当我们想得到一个很大的集合时，如果使用普通方法，一次性生成出这个集合，然后return返回：
+```python
+def gen_data(n):
+    return [i for i in range(n)]    # 一次性生成大集合
+```
+但如果这个集合非常大时，就需要在内存中一次性占用非常大的内存。
+
+使用yield能够完美解决这类问题，因为yield是懒惰执行的，一次只会返回一个值：
+```python
+for gen_data(n):
+    for i in range(n):
+        yield i         # 每次只生成一个元素
+```
+
 ## 参考：
 
 
-[Python技术进阶——迭代器、可迭代对象、生成器](http://kaito-kidd.com/2018/04/18/python-advance-iterator-generator/)
+
 
 [python 黑科技之迭代器、生成器、装饰器](https://www.jianshu.com/p/efaa19594cf4) 
 
