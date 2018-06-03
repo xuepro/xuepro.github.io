@@ -73,7 +73,10 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'type' object is not iterable
 ```
 表示这不是一个可迭代（iterable）的对象,要使得该容器对象能迭代，必须实现一个**__iter__** 方法 并通过这个方法返回一个**迭代器** 。
-即**可迭代对象** 是一个可通过**__iter__** 方法返回一个**迭代器** 的对象。
+
+## 可迭代对象
+
+是一个可通过**__iter__** 方法返回一个**迭代器** 的对象。
 
 对于一个可迭代对象,可以使用 for 来循环遍历其中的元素。比如常见的 list、set和dict。可以用以下isinstance方法来测试对象是否是可迭代（Iterable）
 
