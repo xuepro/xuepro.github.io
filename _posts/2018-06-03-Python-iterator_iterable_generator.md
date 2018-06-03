@@ -104,7 +104,7 @@ class B(object):
         self.n = n
     def __iter__(self):
         return self
-    def next(self):
+    def __next__(self):
         if self.idx < self.n:
             val = self.idx
             self.idx += 1
@@ -144,7 +144,17 @@ for i in a:
     print (i)
 print (iter(a) )  
 ```
-
+输出
+```
+0
+1
+2
+<__main__.B object at 0x00000250BC154208>
+0
+1
+2
+<__main__.B object at 0x00000250BC099F98>
+```
 
 ## 参考：
 
