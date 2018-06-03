@@ -43,7 +43,7 @@ True
 True
 True
 ```
-可以如下顶一个一个容器（即实现**__contains__** 方法）:'
+可以如下实现一个容器（即实现**__contains__** 方法）:'
 ```python
 class A(object):
     def __init__(self):
