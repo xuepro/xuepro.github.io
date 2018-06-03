@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Python-迭代器(iterator)、可迭代对象(iterable)、生成器(generator)"
+title:        "Python-迭代器(iterator)、可迭代的(iterable)、生成器(generator)"
 subtitle:     "iterator,iterable,generator"
 date:         2018-06-03 17:47:00
 author:       "xuepro"
@@ -72,11 +72,11 @@ TypeError                                 Traceback (most recent call last)
 
 TypeError: 'type' object is not iterable
 ```
-表示这不是一个可迭代（iterable）的对象,要使得该容器对象能迭代，必须实现一个**__iter__** 方法 并通过这个方法返回一个**迭代器** 。
+表示这不是一个**可迭代（iterable）**的对象,要使得该容器对象能迭代，必须实现一个**__iter__** 方法 并通过这个方法返回一个**迭代器**对象 。
 
-## 可迭代对象
+## 可迭代的
 
-是一个可通过**__iter__** 方法返回一个**迭代器** 的对象。
+是一个可通过**__iter__** 方法返回一个**迭代器** 对象的类。该类的对象称为"**可迭代对象**"。
 
 对于一个可迭代对象,可以使用 for 来循环遍历其中的元素。比如常见的 list、set和dict。可以用以下isinstance方法来测试对象是否是可迭代（Iterable）
 
@@ -93,7 +93,29 @@ True
 False
 ```
 
+## 迭代器
 
+实现了**__iter__** 和**__next__** 方法的类。 例如下面定义了名为B的**迭代器**类。
+```python
+class B(object):
+    """这个类是个迭代器，因为实现了__iter__和next方法"""
+    def __init__(self, n):
+        self.idx = 0
+        self.n = n
+    def __iter__(self):
+        return self
+    def next(self):
+        if self.idx < self.n:
+            val = self.idx
+            self.idx += 1
+            return val
+        else:
+            raise StopIteration()
+```
+**迭代器** 类的 **__iter__**  方法都返回自身“return self”。即返回一个“ **可迭代的对象** ”
+
+既然**迭代器**类也包含了 **__iter__**,所以**迭代器**也是一个**可迭代的**，但**可迭代的**不一定是迭代器
+ 
 
 
 参考：
