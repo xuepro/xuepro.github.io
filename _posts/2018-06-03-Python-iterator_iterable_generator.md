@@ -181,6 +181,29 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'A' object is not an iterator
 ```
 
+我们熟悉的内置类型对象list、tuple、set、dict，都是可迭代对象，但不是一个迭代器，因为其内部都把迭代细节交给了另外一个类，这个类才是真正的迭代器：
+
+## 生成器
+生成器是特殊的迭代器，它也是个可迭代对象。
+
+有2种方式可以创建一个生成器：
+
+- 生成器表达式
+- 生成器函数
+
+生成器表达式 类似于 列表表达式(综合式)，即将 列表表达式的```[]``换成了```()```。例如
+```python
+g = (i for i in range(5))   # 创建一个生成器
+print(g)
+it = iter(g)         # 生成器就是一个迭代器
+print(it)
+```
+输出
+```
+<generator object <genexpr> at 0x00000250BC1049E8>
+<generator object <genexpr> at 0x00000250BC1049E8>
+```
+
 
 ## 参考：
 
