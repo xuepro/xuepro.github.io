@@ -32,5 +32,7 @@ tags:
 [AlphaGo Zero Explained In One Diagram](https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0)
 ![](https://applied-data.science/static/main/res/alpha_go_zero_cheat_sheet.png)
 
+[How to build your own AlphaZero AI using Python and Keras](https://medium.com/applied-data-science/how-to-build-your-own-alphazero-ai-using-python-and-keras-7f664945c188)
+
 
 
