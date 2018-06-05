@@ -13,10 +13,17 @@ tags:
     
 ---
 
-[1](https://www.jessicayung.com/alphago-zero-an-overview-of-the-algorithm/)
+[AlphaGo_IJCAI.pdf](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Resources_files/AlphaGo_IJCAI.pdf)
 
-[2](http://www.cnblogs.com/bnuvincent/p/6896338.html)
+[深度解读AlphaGo](http://www.cnblogs.com/bnuvincent/p/6896338.html)
 
-https://www.tastehit.com/blog/google-deepmind-alphago-how-it-works/
+[Google DeepMind's AlphaGo: How it works](https://www.tastehit.com/blog/google-deepmind-alphago-how-it-works/)
 
-http://blog.sciencenet.cn/blog-1225851-962087.html
+[AlphaGo and Monte Carlo Tree Search](https://courses.cs.washington.edu/courses/cse547/17sp/slides/alpha_go.pdf)
+
+[解密Google Deepmind AlphaGo围棋算法](https://blog.csdn.net/cjianwyr/article/details/54912219)
+
+[AlphaGo Zero: An overview of the algorithm](https://www.jessicayung.com/alphago-zero-an-overview-of-the-algorithm/)
+
+
+
