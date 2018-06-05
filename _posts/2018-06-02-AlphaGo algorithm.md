@@ -19,6 +19,8 @@ tags:
 
 [Google DeepMind's AlphaGo: How it works](https://www.tastehit.com/blog/google-deepmind-alphago-how-it-works/)
 
+[AlphaGo-lecture](https://web.stanford.edu/class/cs221/2017/lectures/section5.pdf)
+
 [AlphaGo and Monte Carlo Tree Search](https://courses.cs.washington.edu/courses/cse547/17sp/slides/alpha_go.pdf)
 
 [解密Google Deepmind AlphaGo围棋算法](https://blog.csdn.net/cjianwyr/article/details/54912219)
