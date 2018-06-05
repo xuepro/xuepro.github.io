@@ -25,6 +25,8 @@ tags:
 
 [解密Google Deepmind AlphaGo围棋算法](https://blog.csdn.net/cjianwyr/article/details/54912219)
 
+[AlphaGo Zero: Learning from scratch | DeepMind](https://deepmind.com/blog/alphago-zero-learning-scratch/)
+
 [AlphaGo Zero: An overview of the algorithm](https://www.jessicayung.com/alphago-zero-an-overview-of-the-algorithm/)
 
 
