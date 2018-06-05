@@ -29,7 +29,7 @@ tags:
 
 [AlphaGo Zero: An overview of the algorithm](https://www.jessicayung.com/alphago-zero-an-overview-of-the-algorithm/)
 
-[AlphaGo Zero Explained In One Diagram](https://applied-data.science/static/main/res/alpha_go_zero_cheat_sheet.png)
+[AlphaGo Zero Explained In One Diagram](https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0)
 
 
 
