@@ -34,7 +34,14 @@ $$\begin{equation}  \begin{align*}
 \end{align*}\end{equation} $$
 
 $$\begin{equation}
-\begin{align*}
+\begin{split}
 x^2+y^2 & = 2 \\
 \sin(y) & = 0.5
-\end{align*}\end{equation} $$
+\end{split}\end{equation} $$
+
+
+$$\begin{equation}
+\begin{align}
+x^2+y^2 & = 2 \\
+\sin(y) & = 0.5
+\end{align}\end{equation} $$
