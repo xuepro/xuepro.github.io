@@ -26,3 +26,9 @@ $$\begin{equation}  \begin{split}
 & = \sum_x p(x) \nabla_{\theta} \log p(x) f(x) & \text{use the fact that } \nabla_{\theta} \log(z) = \frac{1}{z} \nabla_{\theta} z \\
 & = E_x[f(x) \nabla_{\theta} \log p(x) ] & \text{definition of expectation} 
 \end{split}\end{equation} $$
+
+### Policy Gradient
+
+参数化的随机策略：   $$\pi(a\vert s,\theta )$$
+
+最小化reward（advantage）期望: $$E[\pi(a_t\vert s_t,\theta)  R_t]
