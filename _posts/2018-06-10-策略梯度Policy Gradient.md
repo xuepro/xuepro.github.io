@@ -19,8 +19,7 @@ The general case is that when we have an expression of the form $$E_{x \sim p(x 
 
 
 $$\begin{equation}\begin{split}
-\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) &  \text{definition of expectation} \ 
-& = \sum_x \nabla_{\theta} p(x) f(x) & \text{swap sum and gradient} \
+\nabla_{\theta} E_x[f(x)] &= \nabla_{\theta} \sum_x p(x) f(x) &  \text{definition of expectation} 
 \end{split}\end{equation} $$
 
 
