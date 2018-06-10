@@ -31,4 +31,11 @@ $$\begin{equation}  \begin{split}
 
 参数化的随机策略：   $$\pi(a\vert s,\theta )$$
 
-最小化reward（advantage）期望: $$E[\pi(a_t\vert s_t,\theta)  R_t]
+最小化reward（advantage）期望:
+
+$$\begin{equation}  \begin{split} 
+E[\pi(a_t\vert s_t,\theta)  R_t] \\
+& = E[\pi(a_t\vert s_t,\theta)  (R_t-b_(s_t)]
+\end{split}\end{equation} $$
+
+可以取$$b(s_t) \approx V(s_t)$$
