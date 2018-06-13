@@ -1,4 +1,3 @@
-
 ---
 layout:       post
 title:        "Python程序设计基础与实践安装和解释器"
