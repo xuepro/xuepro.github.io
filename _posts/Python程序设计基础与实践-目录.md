@@ -1,0 +1,288 @@
+
+
+##  Python程序设计基础与实践-目录
+
+### 1. 选题背景
+
+Python是一个易于学习的、功能强大的编程语言。它具有高效的高级数据结构和能够简单有效地实现面向对象编程。Python优美的语法和动态类型，连同解释型特性一起，使其在多个平台的许多领域都成为脚本处理以及快速应用开发的理想语言。Python是全能型的应用编程语言，用Python可以做web开发、爬虫、运维、数据分析、人工智能等。比如做web开发，有Django、Flask和Tornado等框架，在爬虫有Scrapy等框架，在自动化运维领域有Ansible等，在数据分析有Numpy、Matplotlib等，在人工智能有scikit-learn、Tensorflow，caffe等。
+
+ 目前，市场上Python 语言的教材几乎都是翻译的国外教材，由于文化和思维方式的不同，这些书并不适合广大的国内读者，特别是针对国内大中专院校的国内作者编写的高质量教材还普遍比较少，目前国内外大数据、人工智能的研究和产业应用蓬勃发展、热火朝天，对Python人才的需求非常迫切，本书的目的是编写一本适合中国读者的可作为大中专院校教学用的由浅入深、内容全面、实例丰富的教材。
+
+目前市场上的编程书籍很多都是长篇大论或过多的文字叙述，使得读者很难把握住重点，我们希望编写一本简明扼要又深入全面的Python教学书籍，既避免过多的语法细节，又注重语言本身的实际使用能力的培养。
+
+## 2. 内容简介
+
+​     本书针对没有任何编程基础的读者，首先介绍了Python语言的基本语法特性及标准库，然后介绍了针对一些专题应用的编程知识以扩展实际应用能力，最后通过一些经典的项目实战进一步提高Python语言的实战能力。在Python语法的基本语法方面介绍了Python语言的基础知识，包括：变量、控制语句、函数、数据结构、面向对象语言特性，然后介绍了Python标准库的常用模块，在专题应用方面介绍了进程与线程、图形用户界面、数据库、网络编程以及著名的numpy科学计算库和Matplotlib 2D 绘图库。然后通过游戏开发和机器学习与深度学习的一些经典实战项目进一步展示Python在软件开发和科学研究中的优势，进一步提高读者将Pyhton用于实际研发的能力。
+
+  本书的特点是避免教科书普遍的冗长繁琐的文字描述，语言尽可能精炼，避免过多的语法细节，注重语言本身的实际使用能力的培养。以尽可能简短的篇幅让初学者从快速一窥门径到逐渐的灵活应用。
+
+## 2. 目录
+
+###  第一部分： Python语言
+
+第1章：绪论
+
+​    1.0 程序和编程语言
+
+​    1.1 Python 介绍
+
+​    1.2   Python 环境安装
+
+​         1.2.1 原生安装
+
+​         1.2.2 工具包安装
+
+1. 3 Python 解释器 : [Python Interpreter](http://xuepro.xcguan.net/2017/11/15/Python%E6%95%99%E7%A8%8B-2.Python%E8%A7%A3%E9%87%8A%E5%99%A8-Python_Interpreter/), [first step](https://borisliu.gitbooks.io/from-python-to-django/content/a-byte-of-python3/first_steps.html), [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html) 
+
+​         1.3.1  交互模式、字符串、函数
+
+​         1.3.2  脚本模式
+
+​         1.3.3  语句和注释 
+
+​   1.4  数的表示
+
+   1.5 字符的表示
+
+   1.6 练习： 分别以交互模式和脚本模式： 打印图案、计算半径是2.5的圆的面积
+
+第2章  Python基本计算
+
+​        2.1  值、类型、对象
+
+​        2.2   变量
+
+​        2.3  数据类型
+
+​        2.4  类型转换和输入
+
+​        2.5  [运算符与表达式](https://borisliu.gitbooks.io/from-python-to-django/content/a-byte-of-python3/op_exp.html)         
+
+​        2.6  控制语句： 条件（代码缩进）、循环       
+
+​        2.7  实战：
+
+　　　　２.7.1  排序：冒泡、选择、插入
+
+　　　　 2.7.2   学生成绩分析：输入、修改、（模糊）查询、等级比例、平均成绩、全距 
+
+​                2.7.3   图书管理程序                              
+
+​       2.8   练习
+
+```
+输入高度和重量确定肥胖? 摄氏/华氏温度转换？一元二次方程求根？打印图案
+```
+
+  参考： [Python Introduction](https://www.programiz.com/python-programming/variables-constants-literals)  
+
+[basic](https://borisliu.gitbooks.io/from-python-to-django/content/a-byte-of-python3/basics.html), [初步](http://xuepro.xcguan.net/2017/11/15/Python%E6%95%99%E7%A8%8B-3.-Python%E5%88%9D%E6%AD%A5/),  [introduction](https://docs.python.org/3/tutorial/introduction.html)
+, [基础](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738264643de15c5c4abad47dd9510e3b86286acb8000)     [statement-indentation-comments](https://www.programiz.com/python-programming/statement-indentation-comments) [基础教程](https://git.oschina.net/yangjh/LearningPHP/raw/master/LearningPython.pdf)  
+
+第3章：[函数](https://borisliu.gitbooks.io/from-python-to-django/content/a-byte-of-python3/functions.html)
+
+​    3.1 定义函数和调用函数    
+
+​    3.2 局部变量和全局声明
+
+​    3.3 函数的参数:  默认参数、关键字参数、可变参数和字典参数、解封参数列表
+
+​    3.4 递归函数：调用自身的函数。
+
+​       3.4.1  递归函数： 阶乘、最大公约数问题、斐波拉契数列、汉诺塔问题
+
+​       3.4.2 实战： 迷宫问题
+
+​       3.4.3 实战：二分查找       
+
+​       3.4.4 实战：快速排序、归并排序
+
+​       3.4.5 实战：八皇后问题
+
+​    3.5 函数对象和Lambda表达式    
+
+​    3.6 [模块](https://docs.python.org/3/tutorial/modules.html)和包、
+
+​        3.6.1 模块和import 
+
+​        3.6.2 包 
+
+​        3.6.3 matplotlib绘图库
+
+​     3.7  实战：  
+
+​       3.7.1  生命游戏
+
+​       3.7.2  乒乓球游戏
+
+​       3.7.3  贪吃蛇游戏
+
+​     3.8  练习   
+
+第4章：[数据类型(数据结构)](https://www.programiz.com/python-programming/list): [doc](https://docs.python.org/3/tutorial/datastructures.html) 
+
+​    4.1 数值类型Number  
+
+​    4.2 列表List、 列表解析式(list-comprehension)
+
+​    4.3 字符串 String
+
+​    4.4  元组Tuple
+
+​    4.5 集合Set
+
+​    4.6  字典Dictionary、嵌套字典
+
+​    4.7 练习
+
+​     4.8 实战：
+
+​        4.8.1  队列和栈
+
+​        4.8.2   农夫过河问题
+
+​        4.8.3  强化学习-"Q-Learning”  求解最佳路径
+
+第5章 ：[面向对象编程](https://docs.python.org/3/tutorial/classes.html) :[参考](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868200605560b1bd3c660bf494282ede59fee17e781000) 
+
+​     5.1 类和对象
+
+​     5.2  访问控制
+
+​     5.3  派生类
+
+​     5.4  运算符重载
+
+​     5.5 实战： 
+
+​        5.5.1 链表的实现及其应用
+
+​        5.5.2 二叉排序树
+
+​     5.6 练习：
+
+第6章：输入输出(IO) [ io](https://docs.python.org/3/library/io.html#in-memory-streams)
+
+[文件和异常处理](https://www.programiz.com/python-programming/list-comprehension) ：[参考1](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386820066616a77f826d876b46b9ac34cb5f34374f7a000) 
+
+​    6.1 文件读写
+
+​    6.2  内存流 ( [in-memory stream]())
+
+​    6.3 目录
+
+​    6.4 序列化
+
+​    6.5 实战：
+
+​    6.6 练习  
+
+第7章：错误和异常
+
+​     7.1  try-except
+
+​     7.2 多个 except
+
+​     7.3  自定义异常  
+
+​     7.4 调试程序、logging
+
+第8章：高级语言特征
+
+   8.1 迭代器、可迭代的、生成器
+
+   8.2 闭包closure
+
+   8.3 装饰器
+
+   8.4 属性Property
+
+   8.5  浅拷贝和深拷贝
+
+​    8.6 __slots__
+
+​    8.7 元类
+
+第9章：更多游戏实战
+
+​      9.1 五子棋游戏 
+
+​      9.2 Flappy Bird 
+
+​      9.3 游戏“雷电战车“
+
+​      9.4  台球游戏     
+
+第10章：机器学习与深度学习实战
+
+​      10.1 numpy多维数组库   
+
+​       10.2  机器学习-“线性回归”预测房屋价格”
+
+​      10.2 深度神经网络
+
+​      10.3 深度学习分类和回归
+
+##  第二部分： 常用标准库模块
+
+第11章：标准库概述
+
+   11.1 系统接口
+
+   11.2 日期和时间
+
+   11.3 数学
+
+​    11.4 数据压缩和加密
+
+第12章：串的模式匹配：正则表达式
+
+   12.1 正则表达式
+
+   12.2 re模块
+
+第13章：并发计算：进程和线程
+
+   13.1 线程
+
+   13.2 进程 
+
+第14章：图形用户界面
+
+   14.1  Tkinter基础
+
+   14.2  用类封装GUI
+
+   14.3  实战： 二维绘图程序
+
+第15章：网络编程
+
+   15.1 套接字编程概述 
+
+​    15.2  TCP/IP Server（服务器）和Client(客户)
+
+​    15.3  13.3 UDP 服务器和客户
+
+第16章：Internet访问
+
+   16.1 urlib、网络爬虫
+
+   16.2 smtplib和poplib
+
+第17章：数据持久化和交换
+
+   17.1 Pickle
+
+   17.2  selve
+
+   17.3 dbm
+
+​    17.4 sqlite3
+
+​    17.5 json
+
+​     17.6 cvs
+
+第18章：实战
+
+  
