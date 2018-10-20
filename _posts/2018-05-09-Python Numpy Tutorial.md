@@ -14,7 +14,7 @@ tags:
 ---    
      
 
-## Python Numpy 教程(Python Numpy Tutorial)
+# Python Numpy 教程(Python Numpy Tutorial)
 
 这篇[教程](https://cs231n.github.io/python-numpy-tutorial/)来自[Justin Johnson](https://cs.stanford.edu/people/jcjohns/)。
 
@@ -52,7 +52,7 @@ tags:
    * 子图
    * 图像
    
-### Python
+## Python
    
 Python是一种高级的，动态类型的多范型编程语言。很多时候，大家会说Python看起来简直和伪代码一样，这是因为你能够通过很少行数的代码表达出很有力的思想。举个例子，下面是用Python实现的经典的quicksort算法例子：
 
@@ -372,7 +372,7 @@ g.greet(loud=True)   # Call an instance method; prints "HELLO, FRED!"
 
 Numpy是Python中用于科学计算的核心库。它提供了高性能的多维数组对象，以及相关工具。
 
-## 数组Arrays
+### 数组Arrays
 
 一个numpy数组是一个由不同数值组成的网格。网格中的数据都是同一种数据类型，可以通过非负整型数的元组来访问。维度的数量被称为数组的阶，数组的大小是一个由整型数构成的元组，可以描述数组不同维度上的大小。
 
@@ -417,7 +417,7 @@ print(e)                     # Might print "[[ 0.91940167  0.08143941]
 ```
 你可以在[文档](http://docs.scipy.org/doc/numpy/user/basics.creation.html#arrays-creation)中阅读数组创建的其他方法。
 
-## 数组索引
+### 数组索引
 
 Numpy提供了几种方式索引数组
 
@@ -656,7 +656,7 @@ print(v.T)  # Prints "[1 2 3]"
 
 Numpy还提供了更多操作数组的函数，完整列表可以查看[文档](http://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html)。
 
-## 广播Broadcasting
+### 广播Broadcasting
 
 广播是一个强有力的机制，使得numpy可以对不同形状的数组进行算术运算。我们常常会有一个小的矩阵和一个大的矩阵，我们经常用小的矩阵对大的矩阵做一些操作。
 
@@ -777,7 +777,7 @@ print(x * 2)
 ```
 广播机制能够让你的代码更简洁更迅速，你应该尽可能使用它！
 
-## Numpy 文档（Documentation）
+### Numpy 文档（Documentation）
 
 简单的概述涉触及了你需要了解的numpy中的一些重要内容，但远不止如此。可以查阅numpy参考手册[numpy reference](http://docs.scipy.org/doc/numpy/reference/)查询更多信息。
 
@@ -786,7 +786,7 @@ Numpy提供了高性能的多维数组，以及计算和操作数组的基本工
 
 熟悉SciPy的最好方法就是浏览[文档](http://docs.scipy.org/doc/scipy/reference/index.html)。我们会突出对本课程有用的部分。
 
-## 图像操作Image operations
+### 图像操作Image operations
 SciPy提供了一些操作图像的基本函数。比如，它提供了将图像从硬盘读入到数组的函数，也提供了将数组中数据写入硬盘成为图像的函数。这是一个说明这些函数的简单例子：
 ```python
 from scipy.misc import imread, imsave, imresize
