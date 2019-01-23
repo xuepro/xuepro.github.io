@@ -1,0 +1,16 @@
+---
+layout:       post
+title:        "我的学生在Kaggle和阿里的人工智能比赛中取得第11名和第1名的好成绩"
+subtitle:     "我的学生在Kaggle和阿里的人工智能比赛中取得第11名和第1名的好成绩"
+date:         2019-01-18 21:27:00
+author:       "xuepro"
+header-img:   "img/home_bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - Python
+    
+---   
+
+一个喜欢参加各种人工智能比赛的学生在阿里的“视频问答”比赛中得到了第一名的好成绩，还在Kaggle的“人体细胞分类”比赛中在4000多个来自世界各地的队伍中（学生说，最终成绩榜上踢掉了2000个队伍）取得了第11名的好成绩。
