@@ -106,8 +106,12 @@ service-worker: true
 # Friends
 friends: [
    {
-         title: "微博'教小白精通编程",
-         href: "http://weibo.com/6196175626"
+         title: "B站:hw-dong",
+         href: "http://space.bilibili.com/281453312"
+    },
+   {
+         title: "微博:hw-dong",
+         href: "http://weibo.com/6762417916"
     },
     {      
          title: "网易云课堂",
