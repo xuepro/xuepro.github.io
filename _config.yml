@@ -105,9 +105,17 @@ service-worker: true
 
 # Friends
 friends: [
+    {      
+         title: "Youtube频道",
+         href: "https://www.youtube.com/channel/UCIJLimsCMSfc3wHmevgj8Ng"   
+    },
    {
          title: "B站:hw-dong",
          href: "http://space.bilibili.com/281453312"
+    },
+    {      
+         title: "腾讯课堂",
+         href: "http://hwdong.ke.qq.com"   
     },
    {
          title: "微博:hw-dong",
@@ -116,13 +124,6 @@ friends: [
     {      
          title: "网易云课堂",
          href: "https://study.163.com/provider/400000000236023/course.htm/"   
-    },
-    {      
-         title: "Youtube频道",
-         href: "https://www.youtube.com/channel/UCIJLimsCMSfc3wHmevgj8Ng"   
-    },
-    {      
-         title: "腾讯课堂",
-         href: "http://hwdong.ke.qq.com"   
-    }
+    }   
+    
 ]
