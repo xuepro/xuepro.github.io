@@ -67,13 +67,13 @@ gitment:
 
 # Gitalk
 gitalk: 
-  enable: true    #是否开启Gitalk评论
-  clientID: 023fdcee38277981155d                           #生成的clientID
-  clientSecret: d88a5f82ad541303a5db0b1fcc63ce710f66e3ca   #生成的clientSecret
-  repo: xuepro.github.io    #仓库名称
-  owner: xuepro    #github用户名
+  enable: true
+  clientID:023fdcee38277981155d
+  clientSecret:d88a5f82ad541303a5db0b1fcc63ce710f66e3ca
+  repo: xuepro.github.io
+  owner: xuepro
   admin: xuepro
-  distractionFreeMode: false #是否启用类似FB的阴影遮罩
+  distractionFreeMode: false
 
 
 # 统计
