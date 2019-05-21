@@ -68,8 +68,8 @@ gitment:
 # Gitalk
 gitalk: 
   enable: true
-  clientID:023fdcee38277981155d
-  clientSecret:d88a5f82ad541303a5db0b1fcc63ce710f66e3ca
+  clientID: 6602ecb46c82d1c987f7
+  clientSecret: 9840b8d516aa9c5a32d7236dc44520836f8596a6
   repo: xuepro.github.io
   owner: xuepro
   admin: xuepro
