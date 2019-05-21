@@ -98,8 +98,7 @@ layout: default
                     owner: '{{site.gitalk.owner}}',
                     admin: ['{{site.gitalk.admin}}'],
                     distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-                    //id: window.location.pathname,
-		    id: (window.location.pathname.length < 50) ? window.location.pathname : '{{ page.date}}',
+                    id: window.location.pathname		    
                     });
                     gitalk.render('gitalk-container');
                 </script>
