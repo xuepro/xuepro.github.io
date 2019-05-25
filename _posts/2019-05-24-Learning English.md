@@ -12,4 +12,6 @@ tags:
     - DS
 ---
 
-[Lesson 16: Where Are You From?](https://www.youtube.com/watch?v=QQavoMYmMVE)
+[Lesson 16: Where Are You From?](https://www.youtube.com/watch?v=QQavoMYmMVE)  
+
+[谢孟媛老师美式音标及发音视频教程](https://www.youtube.com/watch?v=I_BBh97dmR0)
