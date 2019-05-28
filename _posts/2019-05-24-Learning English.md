@@ -28,6 +28,12 @@ tags:
 
 [Lesson 7: What Are You Doing?](https://www.youtube.com/watch?v=zkEnsSVBfPM)
 
+[Lesson 8: Are You Busy?](https://www.youtube.com/watch?v=uHuChnbaw6k)
+
+[Lesson 9: Is It Cold?](https://www.youtube.com/watch?v=kCdnsv393Ko)
+
+[Lesson 10: Come Over to My Place](https://www.youtube.com/watch?v=Se6HW_FC7aU)
+
 [Lesson 16: Where Are You From?](https://www.youtube.com/watch?v=QQavoMYmMVE)  
 
 [谢孟媛老师美式音标及发音视频教程](https://www.youtube.com/watch?v=I_BBh97dmR0)
