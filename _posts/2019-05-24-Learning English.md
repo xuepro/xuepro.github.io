@@ -48,6 +48,8 @@ tags:
 
 [Let's Learn English Lesson 17: Are You Free on Friday?](https://www.youtube.com/watch?v=91sCUUVTDV8)
 
+[Let's Learn English Lesson 18: She Always Does That](https://www.youtube.com/watch?v=he12VfXp5Ec)
+
 [Speaking Practice - Let's Learn English Lesson 9](https://www.youtube.com/watch?v=wMV1z4o91JI)
 
 [谢孟媛老师美式音标及发音视频教程](https://www.youtube.com/watch?v=I_BBh97dmR0)
