@@ -34,6 +34,8 @@ tags:
 
 [Lesson 10: Come Over to My Place](https://www.youtube.com/watch?v=Se6HW_FC7aU)
 
+[Lesson 11: This Is My Neighborhood](https://www.youtube.com/watch?v=8_npDNRKGIE)
+
 [Lesson 16: Where Are You From?](https://www.youtube.com/watch?v=QQavoMYmMVE)  
 
 [谢孟媛老师美式音标及发音视频教程](https://www.youtube.com/watch?v=I_BBh97dmR0)
