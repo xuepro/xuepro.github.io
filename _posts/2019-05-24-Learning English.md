@@ -38,6 +38,10 @@ tags:
 
 [Lesson 12: Meet My Family](https://www.youtube.com/watch?v=ncA2an5c1_g)
 
+[Lesson 13: Happy Birthday, William Shakespeare!](https://www.youtube.com/watch?v=oJOdrnPlSUE)
+
+[Lesson 14: How About This?](https://www.youtube.com/watch?v=4Xn1Ysdmuvg)
+
 [Lesson 16: Where Are You From?](https://www.youtube.com/watch?v=QQavoMYmMVE)  
 
 [Speaking Practice - Let's Learn English Lesson 9](https://www.youtube.com/watch?v=wMV1z4o91JI)
