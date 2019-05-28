@@ -24,7 +24,9 @@ tags:
 
 [Lesson 5: Where Are You?](https://www.youtube.com/watch?v=5WLS7sBaiqE)
 
-[Lesson 6: Where Is the Gym?](https://www.youtube.com/watch?v=zkEnsSVBfPM)
+[Lesson 6: Where Is the Gym?](https://www.youtube.com/watch?v=zkEnsSVBfPM) 
+
+[Lesson 7: What Are You Doing?](https://www.youtube.com/watch?v=zkEnsSVBfPM)
 
 [Lesson 16: Where Are You From?](https://www.youtube.com/watch?v=QQavoMYmMVE)  
 
