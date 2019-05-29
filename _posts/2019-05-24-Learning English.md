@@ -74,6 +74,8 @@ tags:
 
 [Let's Learn English Lesson 30: Rolling on the River](https://www.youtube.com/watch?v=GnQEE0gEir0)
 
+[Let's Learn English Lesson 31 Take Me Out to the Ball Game](https://www.youtube.com/watch?v=xfMnWypEufs)
+
 [Speaking Practice - Let's Learn English Lesson 9](https://www.youtube.com/watch?v=wMV1z4o91JI)
 
 
