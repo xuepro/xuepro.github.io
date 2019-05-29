@@ -76,6 +76,8 @@ tags:
 
 [Let's Learn English Lesson 31 Take Me Out to the Ball Game](https://www.youtube.com/watch?v=xfMnWypEufs)
 
+[Let's Learn English Lesson 32: Welcome to the Treehouse!](https://www.youtube.com/watch?v=1egFRwUFc48)
+
 [Speaking Practice - Let's Learn English Lesson 9](https://www.youtube.com/watch?v=wMV1z4o91JI)
 
 
