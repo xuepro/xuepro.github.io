@@ -54,6 +54,18 @@ tags:
 
 [Let's Learn English Lesson 20: What Can You Do?](https://www.youtube.com/watch?v=2juFXfLsSJk)
 
+[Let's Learn English Lesson 21: Can You Come to the Party?](https://www.youtube.com/watch?v=A9lwBqNZEh8)
+
+[Let's Learn English Lesson 22: Next Summer...](https://www.youtube.com/watch?v=8Whu9xgm3dE)
+
+[Let's Learn English Lesson 23: What Do You Want?](https://www.youtube.com/watch?v=DzaLlp_kG6c)
+
+[Let's Learn English Lesson 24: Yesterday Was Amazing](https://www.youtube.com/watch?v=7BDjr0Oc6VM)
+
+[]()
+
 [Speaking Practice - Let's Learn English Lesson 9](https://www.youtube.com/watch?v=wMV1z4o91JI)
+
+
 
 [谢孟媛老师美式音标及发音视频教程](https://www.youtube.com/watch?v=I_BBh97dmR0)
