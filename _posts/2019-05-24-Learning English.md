@@ -70,6 +70,8 @@ tags:
 
 [Let's Learn English Lesson 28: I Passed It!](https://www.youtube.com/watch?v=rn7kmGroxKs)
 
+[Let's Learn English Lesson 29: A Long Time Ago](https://www.youtube.com/watch?v=_demyJmMyCo)
+
 [Speaking Practice - Let's Learn English Lesson 9](https://www.youtube.com/watch?v=wMV1z4o91JI)
 
 
