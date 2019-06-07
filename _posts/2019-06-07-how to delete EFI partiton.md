@@ -28,4 +28,4 @@ Type the below command lines and hit Enter each time（输入下列命令）:
 
 如下图所示（我的 EFI系统分区在sidk 1上）：
 
-![](diskpart.png)
+![](img2/diskpart.png)
