@@ -19,7 +19,7 @@ Step 1（第一步）. Open DiskPart（打开*DiskPart*）
 1. Hit "Windows Key + R" to open the run dialogue box. （点"Windows Key + R" 建 ）
 2. Enter diskpart and click "OK" to open a black command prompt window. （命令行窗口输入diskpart）
 
-Step 2. Delete EFI partition with command line （在命令行删除EFI 分区）
+Step 2（第二部）. Delete EFI partition with command line （在命令行删除EFI 分区）
 Type the below command lines and hit Enter each time（输入下列命令）:
 
 +"*list partition*"  (It displays all the volumes on the hard drive.该命令显示所有分区) 
