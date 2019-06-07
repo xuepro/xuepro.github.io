@@ -27,5 +27,4 @@ Type the below command lines and hit Enter each time（输入下列命令）:
 "*delete partition override*" (It removes the EFI partition from Windows disk.) 
 
 如下图所示（我的 EFI系统分区在sidk 1上）：
-
 ![](img2/diskpart.png)
