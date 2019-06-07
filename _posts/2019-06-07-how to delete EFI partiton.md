@@ -22,9 +22,9 @@ Step 1（第一步）. Open DiskPart（打开*DiskPart*）
 Step 2. Delete EFI partition with command line （在命令行删除EFI 分区）
 Type the below command lines and hit Enter each time（输入下列命令）:
 
-"*list partition*"  (It displays all the volumes on the hard drive.) 
-"*select partition 1*" (It identifies which partition you want to remove. Here 1 stands for the volume letter.)
-"*delete partition override*" (It removes the EFI partition from Windows disk.) 
++"*list partition*"  (It displays all the volumes on the hard drive.该命令显示所有分区) 
++"*select partition 1*" (It identifies which partition you want to remove. Here 1 stands for the volume letter.该命令选择某个分区)
++"*delete partition override*" (It removes the EFI partition from Windows disk.该命令删除选择的分区) 
 
 如下图所示（我的 EFI系统分区在sidk 1上）：
 
