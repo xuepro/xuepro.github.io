@@ -70,7 +70,9 @@ tags:
      Click **OK**
      
   6. New IntelliJ Project
-     + Create a Java (not JavaFX) project,
+     + Create a Java (not JavaFX) project, simple
+     
+  7. New IntelliJ Project   
      + Create a JavaFX project
      
        + Go to **File** → **Project Structure... **(CTRL+ALT+SHIFT+S)
@@ -94,19 +96,28 @@ tags:
            
            C:\java\javafx-sdk-11.0.2\lib
            
-      + goto **Run** -> **Edit Configurations...**
-      + add these VM options:
+       + goto **Run** -> **Edit Configurations...**
+       + add these VM options:
       
-       --module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml
+         --module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml
        
-      + **Application** → **Main**  → 
+       + **Application** → **Main**  → 
       
          **use classpath of module**,select "JavaFX"
       
-      + **File** -> **Settings** -> **Appearance & Behavior** -> **Path Variables**
-      + check **PATH_TO_FX** point to:  C:\java\javafx-sdk-11.0.2\lib
+       + **File** -> **Settings** -> **Appearance & Behavior** -> **Path Variables**
+       + check **PATH_TO_FX** point to:  C:\java\javafx-sdk-11.0.2\lib
           
-      + **Run** -> **Run...**,select **Main**
+       + **Run** -> **Run...**,select **Main**
+
+
+
+Reference:
+
+[Installing Java 11](https://taylorial.com/cs1021/Install.htm)
+
+[Getting Started with JavaFX 12](https://openjfx.io/openjfx-docs/#install-javafx)
+
 
 1. 下载安装openjdk (jdk12): http://jdk.java.net/12/
     设置 JAVA_HOM
@@ -119,12 +130,6 @@ tags:
 3. 下载intellij社区版(Community)
    https://www.jetbrains.com/idea/download
    
-
-Reference:
-
-[Installing Java 11](https://taylorial.com/cs1021/Install.htm)
-
-[Getting Started with JavaFX 12](https://openjfx.io/openjfx-docs/#install-javafx)
 
 
   
