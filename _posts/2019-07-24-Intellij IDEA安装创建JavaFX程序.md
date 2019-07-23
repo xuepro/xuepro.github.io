@@ -58,6 +58,54 @@ tags:
       Select C:\java\javafx-sdk-11.0.2  
    
 
+    + Close all open IntelliJ projects to the **Welcome to IntelliJ IDEA** window
+    + Go to **Configure** → **Run Configurations templates for NEW Project** → 
+    + doto **Templates** and select **Application**
+     
+      Paste the following in VM options:
+      
+     --module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml
+     
+     Click **OK**
+     
+  6. New IntelliJ Project
+     + Create a Java (not JavaFX) project,
+     + Create a JavaFX project
+     
+       + Go to **File** → **Project Structure... **(CTRL+ALT+SHIFT+S)
+       + Select **Modules**
+       + Open the **Dependencies** tab and click **+*8
+       
+          Select **JARs or directories...**
+       
+         Select C:\java\javafx-sdk-11.0.2\lib
+         Click **OK** 
+         
+       + Go to **File** → **Project Structure... **(CTRL+ALT+SHIFT+S)
+       + Select **Project** 
+       
+          set the project SDK to 12. You can also set the language level to 12.
+          
+       + Go to **File** → **Project Structure... **(CTRL+ALT+SHIFT+S)
+       + Select **Libraries ** 
+       
+           and add the JavaFX 12 SDK as a library to the project. Point to the lib folder of the JavaFX SDK.
+           
+           C:\java\javafx-sdk-11.0.2\lib
+           
+      + goto **Run** -> **Edit Configurations...**
+      + add these VM options:
+      
+       --module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml
+       
+      + **Application** → **Main**  → 
+      
+         **use classpath of module**,select "JavaFX"
+      
+      + **File** -> **Settings** -> **Appearance & Behavior** -> **Path Variables**
+      + check **PATH_TO_FX** point to:  C:\java\javafx-sdk-11.0.2\lib
+          
+      + **Run** -> **Run...**,select **Main**
 
 1. 下载安装openjdk (jdk12): http://jdk.java.net/12/
     设置 JAVA_HOM
