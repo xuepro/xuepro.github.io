@@ -14,7 +14,7 @@ tags:
 
 ### install  intellij IDEA
 
-[install Video](https://www.bilibili.com/video/av60482727) 
+[how to install  intellij IDEA and create JavaFX Application](https://www.bilibili.com/video/av60482727) 
 
 1. download 
 
