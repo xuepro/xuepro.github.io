@@ -14,6 +14,7 @@ tags:
 
 ### install  intellij IDEA
 
+[install Video](https://www.bilibili.com/video/av60482727) 
 
 1. download 
 
